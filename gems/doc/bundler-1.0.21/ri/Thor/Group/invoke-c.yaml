@@ -1,0 +1,14 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Invoke the given namespace or class given. It adds an instance method that will invoke the klass and task. You can give a block to configure how it will be invoked.
+- !ruby/struct:SM::Flow::P 
+  body: The namespace/class given will have its options showed on the help usage. Check invoke_from_option for more information.
+full_name: Thor::Group::invoke
+is_singleton: true
+name: invoke
+params: (*names, &block)
+visibility: public

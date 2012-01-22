@@ -1,0 +1,17 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: CreateLink is a subset of CreateFile, which instead of taking a block of data, just takes a source string from the user.
+constants: []
+
+full_name: Thor::Actions::CreateLink
+includes: []
+
+instance_methods: []
+
+name: CreateLink
+superclass: CreateFile

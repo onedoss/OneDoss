@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: Thor::RakeCompat::rake_classes
+is_singleton: true
+name: rake_classes
+params: ()
+visibility: public

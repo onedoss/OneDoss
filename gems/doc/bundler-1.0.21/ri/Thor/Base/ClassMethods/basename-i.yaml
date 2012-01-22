@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: The basename of the program invoking the thor class.
+full_name: Thor::Base::ClassMethods#basename
+is_singleton: false
+name: basename
+params: ()
+visibility: protected

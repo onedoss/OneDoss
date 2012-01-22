@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: "Alias for #append_to_file"
+full_name: Thor::Actions#append_file
+is_singleton: false
+name: append_file
+params: (path, *args, &block)
+visibility: public

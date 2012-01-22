@@ -1,0 +1,162 @@
+<%= form_for([@user, @resume, @resume.resume_items.build]) do |f| %>
+
+  <% if @resumeItem.errors.any? %>
+
+    <div id="error_explanation">
+
+      <h2><%= pluralize(@resume_item.errors.count, "error") %> prohibited this resume item from being saved:</h2>
+
+
+      <ul>
+
+      <% @resumeItem.errors.full_messages.each do |msg| %>
+
+        <li><%= msg %></li>
+
+      <% end %>
+
+      </ul>
+
+    </div>
+
+  <% end %>
+
+  <table>
+  <tr>
+  <td>
+  <div class="field">
+
+    <%= f.label :type %><br />
+
+    <%= f.text_field :type %>
+
+  </div>
+  </td>
+  <td>
+  <div class="field">
+
+    <%= f.label :section %><br />
+
+    <%= f.text_field :section %>
+  </div>
+  </td>
+  </tr>
+  <tr>
+  <td>
+  <div class="field">
+
+    <%= f.label :position_title %><br />
+
+    <%= f.text_field :positiontitle %>
+
+  </div>
+  </td>
+  <td>
+  <div class="field">
+
+    <%= f.label :location %><br />
+
+    <%= f.text_field :location %>
+
+  </div>
+  </td>
+  </tr>
+  <tr>
+  <td>
+  <div class="field">
+
+    <%= f.label :start_month %><br />
+
+    <%= f.text_field :startMonth %>
+
+  </div>
+  </td>
+  <td>
+  <div class="field">
+
+    <%= f.label :start_season %><br />
+
+    <%= f.text_field :startSeason %>
+
+  </div>
+  </td>
+  <td>
+  <div class="field">
+
+    <%= f.label :start_year %><br />
+
+    <%= f.text_field :startYear %>
+
+  </div>
+  </td>
+  </tr>
+  <tr>
+  <td>
+  <div class="field">
+
+    <%= f.label :end_month %><br />
+
+    <%= f.text_field :endMonth %>
+
+  </div>
+  </td>
+  <td>
+  <div class="field">
+
+    <%= f.label :end_season %><br />
+
+    <%= f.text_field :endSeason %>
+
+  </div>
+  </td>
+  <td>
+  <div class="field">
+
+    <%= f.label :end_year %><br />
+
+    <%= f.text_field :endYear %>
+
+  </div>
+  </td>
+  </tr>
+  <tr>
+  <td colspan="3">
+  <div class="field">
+
+    <%= f.label :description %><br />
+
+    <%= f.text_area(:description, :cols=>80, :rows=>12) %>
+
+  </div>
+  </td>
+  </tr>
+  <tr>
+  <td>
+  <div class="field">
+
+    <%= f.label :order %><br />
+
+    <%= f.number_field :order %>
+
+  </div>
+  </td>
+  </tr>
+  <tr>
+  <td>
+  <div class="field">
+
+    <%= f.label :link %><br />
+
+    <%= f.url_field :link %>
+
+  </div>
+  </td>
+  </tr>
+  </table>
+  <div class="actions">
+
+    <%= f.submit %>
+
+  </div>
+
+<% end %>

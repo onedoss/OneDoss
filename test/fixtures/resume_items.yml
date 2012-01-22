@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  resume: 
+  type: 
+  section: MyString
+  positiontitle: MyString
+  location: MyString
+  startMonth: MyString
+  startSeason: MyString
+  startYear: 1
+  endMonth: MyString
+  endSeason: MyString
+  endYear: 1
+  description: MyText
+
+two:
+  resume: 
+  type: 
+  section: MyString
+  positiontitle: MyString
+  location: MyString
+  startMonth: MyString
+  startSeason: MyString
+  startYear: 1
+  endMonth: MyString
+  endSeason: MyString
+  endYear: 1
+  description: MyText

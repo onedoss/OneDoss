@@ -1,0 +1,22 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: included
+- !ruby/object:RI::MethodSummary 
+  name: rake_classes
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: "Adds a compatibility layer to your Thor classes which allows you to use rake package tasks. For example, to use rspec rake tasks, one can do:"
+- !ruby/struct:SM::Flow::VERB 
+  body: "  require 'thor/rake_compat'\n\n  class Default &lt; Thor\n    include Thor::RakeCompat\n\n    Spec::Rake::SpecTask.new(:spec) do |t|\n      t.spec_opts = ['--options', &quot;spec/spec.opts&quot;]\n      t.spec_files = FileList['spec/**/*_spec.rb']\n    end\n  end\n"
+constants: []
+
+full_name: Thor::RakeCompat
+includes: []
+
+instance_methods: []
+
+name: RakeCompat
+superclass: 

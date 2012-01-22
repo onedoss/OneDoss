@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: "Alias for #insert_into_file"
+full_name: Thor::Actions#inject_into_file
+is_singleton: false
+name: inject_into_file
+params: (destination, *args, &block)
+visibility: public

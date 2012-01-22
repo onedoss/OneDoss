@@ -1,0 +1,32 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Invoke a thor class based on the value supplied by the user to the given option named &quot;name&quot;. A class option must be created before this method is invoked for each name given.
+- !ruby/struct:SM::Flow::H 
+  level: 4
+  text: Examples
+- !ruby/struct:SM::Flow::VERB 
+  body: "  class GemGenerator &lt; Thor::Group\n    class_option :test_framework, :type =&gt; :string\n    invoke_from_option :test_framework\n  end\n"
+- !ruby/struct:SM::Flow::H 
+  level: 4
+  text: Boolean options
+- !ruby/struct:SM::Flow::P 
+  body: In some cases, you want to invoke a thor class if some option is true or false. This is automatically handled by invoke_from_option. Then the option name is used to invoke the generator.
+- !ruby/struct:SM::Flow::H 
+  level: 4
+  text: Preparing for invocation
+- !ruby/struct:SM::Flow::P 
+  body: In some cases you want to customize how a specified hook is going to be invoked. You can do that by overwriting the class method prepare_for_invocation. The class method must necessarily return a klass and an optional task.
+- !ruby/struct:SM::Flow::H 
+  level: 4
+  text: Custom invocations
+- !ruby/struct:SM::Flow::P 
+  body: You can also supply a block to customize how the option is giong to be invoked. The block receives two parameters, an instance of the current class and the klass to be invoked.
+full_name: Thor::Group::invoke_from_option
+is_singleton: true
+name: invoke_from_option
+params: (*names, &block)
+visibility: public

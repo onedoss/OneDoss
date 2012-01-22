@@ -1,0 +1,35 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: 
+- !ruby/object:RI::AliasName 
+  name: add_link
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Create a new file relative to the destination root from the given source.
+- !ruby/struct:SM::Flow::H 
+  level: 4
+  text: Parameters
+- !ruby/object:SM::Flow::LIST 
+  contents: 
+  - !ruby/struct:SM::Flow::LI 
+    label: "destination<String>:"
+    body: the relative path to the destination root.
+  - !ruby/struct:SM::Flow::LI 
+    label: "source<String|NilClass>:"
+    body: the relative path to the source root.
+  - !ruby/struct:SM::Flow::LI 
+    label: "config<Hash>:"
+    body: give :verbose =&gt; false to not log the status.
+  type: :NOTE
+- !ruby/struct:SM::Flow::VERB 
+  body: "  :: give :symbolic =&gt; false for hard link.\n"
+- !ruby/struct:SM::Flow::H 
+  level: 4
+  text: Examples
+- !ruby/struct:SM::Flow::VERB 
+  body: "  create_link &quot;config/apache.conf&quot;, &quot;/etc/apache.conf&quot;\n"
+full_name: Thor::Actions#create_link
+is_singleton: false
+name: create_link
+params: (destination, *args, &block)
+visibility: public

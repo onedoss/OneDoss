@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+
+
+<p>
+
+  <h1><b><%= @user.username %>
+</b></h1>
+</p>
+
+
+
+
+<p>
+
+  <%= @user.email %>
+
+</p>
+
+
+
+<b>Resumes:</b>
+<table>
+<% @user.resumes.each do |resume| %>
+  <tr>
+     <td>
+       <%= resume.resumeName %>
+     </td>
+     <td>
+       
+<%= link_to 'View', user_resume_path(@user, resume) %>
+     </td>
+  </tr>
+<% end %>
+</table>
+
+Start a New Resume<br/>
+<%= form_for([@user, @user.resumes.build]) do |f| %>
+  <div class="field">
+    <%= f.label :Resume_Name %>
+    <%= f.text_field :resumeName %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+
+
+<%= link_to 'Edit My Account', edit_user_path(@user) %>

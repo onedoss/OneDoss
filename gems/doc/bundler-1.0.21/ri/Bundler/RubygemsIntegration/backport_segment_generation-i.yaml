@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: This backports the correct segment generation code from Rubygems 1.4+ by monkeypatching it into the method in Rubygems 1.3.6 and 1.3.7.
+full_name: Bundler::RubygemsIntegration#backport_segment_generation
+is_singleton: false
+name: backport_segment_generation
+params: ()
+visibility: public

@@ -1,0 +1,17 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Remove a previously added invocation.
+- !ruby/struct:SM::Flow::H 
+  level: 4
+  text: Examples
+- !ruby/struct:SM::Flow::VERB 
+  body: "  remove_invocation :test_framework\n"
+full_name: Thor::Group::remove_invocation
+is_singleton: true
+name: remove_invocation
+params: (*names)
+visibility: public

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <title>system_dir (Rake::Application)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" href="../../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre>     <span class="ruby-comment cmt"># File lib/rake/application.rb, line 517</span>
+517:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">system_dir</span>
+518:       <span class="ruby-ivar">@system_dir</span> <span class="ruby-operator">||=</span>
+519:         <span class="ruby-keyword kw">begin</span>
+520:           <span class="ruby-keyword kw">if</span> <span class="ruby-constant">ENV</span>[<span class="ruby-value str">'RAKE_SYSTEM'</span>]
+521:             <span class="ruby-constant">ENV</span>[<span class="ruby-value str">'RAKE_SYSTEM'</span>]
+522:           <span class="ruby-keyword kw">else</span>
+523:             <span class="ruby-identifier">standard_system_dir</span>
+524:           <span class="ruby-keyword kw">end</span>
+525:         <span class="ruby-keyword kw">end</span>
+526:     <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

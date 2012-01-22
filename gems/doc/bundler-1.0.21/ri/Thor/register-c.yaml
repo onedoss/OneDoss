@@ -1,0 +1,30 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Registers another Thor subclass as a command.
+- !ruby/struct:SM::Flow::H 
+  level: 4
+  text: Parameters
+- !ruby/object:SM::Flow::LIST 
+  contents: 
+  - !ruby/struct:SM::Flow::LI 
+    label: "klass<Class>:"
+    body: Thor subclass to register
+  - !ruby/struct:SM::Flow::LI 
+    label: "command<String>:"
+    body: Subcommand name to use
+  - !ruby/struct:SM::Flow::LI 
+    label: "usage<String>:"
+    body: Short usage for the subcommand
+  - !ruby/struct:SM::Flow::LI 
+    label: "description<String>:"
+    body: Description for the subcommand
+  type: :NOTE
+full_name: Thor::register
+is_singleton: true
+name: register
+params: (klass, subcommand_name, usage, description, options={})
+visibility: public

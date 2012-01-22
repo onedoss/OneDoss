@@ -1,0 +1,126 @@
+<%= form_for([@user, @resume, @resume.resume_items.build]) do |f| %>
+
+  <% if @resumeItem.errors.any? %>
+
+    <div id="error_explanation">
+
+      <h2><%= pluralize(@resume_item.errors.count, "error") %> prohibited this resume item from being saved:</h2>
+
+
+      <ul>
+
+      <% @resumeItem.errors.full_messages.each do |msg| %>
+
+        <li><%= msg %></li>
+
+      <% end %>
+
+      </ul>
+
+    </div>
+
+  <% end %>
+
+
+  <div class="field">
+
+    <%= f.label :type %><br />
+
+    <%= f.text_field :type %>
+
+  </div>
+
+  <div class="field">
+
+    <%= f.label :section %><br />
+
+    <%= f.text_field :section %>
+
+  </div>
+  <div class="field">
+
+    <%= f.label :positiontitle %><br />
+
+    <%= f.text_field :positiontitle %>
+
+  </div>
+
+
+  <div class="field">
+
+    <%= f.label :location %><br />
+
+    <%= f.text_field :location %>
+
+  </div>
+
+  <div class="field">
+
+    <%= f.label :startMonth %><br />
+
+    <%= f.text_field :startMonth %>
+
+  </div>
+  <div class="field">
+
+    <%= f.label :startSeason %><br />
+
+    <%= f.text_field :startSeason %>
+
+  </div>
+  <div class="field">
+
+    <%= f.label :startYear %><br />
+
+    <%= f.text_field :startYear %>
+
+  </div>
+  <div class="field">
+
+    <%= f.label :endMonth %><br />
+
+    <%= f.text_field :endMonth %>
+
+  </div>
+  <div class="field">
+
+    <%= f.label :endSeason %><br />
+
+    <%= f.text_field :endSeason %>
+
+  </div>
+  <div class="field">
+
+    <%= f.label :endYear %><br />
+
+    <%= f.text_field :endYear %>
+
+  </div>
+  <div class="field">
+
+    <%= f.label :description %><br />
+
+    <%= f.text_field :description %>
+
+  </div>
+  <div class="field">
+
+    <%= f.label :order %><br />
+
+    <%= f.text_field :order %>
+
+  </div>
+  <div class="field">
+
+    <%= f.label :link %><br />
+
+    <%= f.text_field :link %>
+
+  </div>
+  <div class="actions">
+
+    <%= f.submit %>
+
+  </div>
+
+<% end %>

@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: Bundler::GemInstaller#check_executable_overwrite
+is_singleton: false
+name: check_executable_overwrite
+params: (filename)
+visibility: public

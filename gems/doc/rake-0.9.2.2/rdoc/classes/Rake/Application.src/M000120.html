@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <title>terminal_width (Rake::Application)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" href="../../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre>     <span class="ruby-comment cmt"># File lib/rake/application.rb, line 241</span>
+241:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">terminal_width</span>
+242:       <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@terminal_columns</span>.<span class="ruby-identifier">nonzero?</span>
+243:         <span class="ruby-identifier">result</span> = <span class="ruby-ivar">@terminal_columns</span>
+244:       <span class="ruby-keyword kw">else</span>
+245:         <span class="ruby-identifier">result</span> = <span class="ruby-identifier">unix?</span> <span class="ruby-value">? </span><span class="ruby-identifier">dynamic_width</span> <span class="ruby-operator">:</span> <span class="ruby-value">80</span>
+246:       <span class="ruby-keyword kw">end</span>
+247:       (<span class="ruby-identifier">result</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">10</span>) <span class="ruby-operator">?</span> <span class="ruby-value">80</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">result</span>
+248:     <span class="ruby-keyword kw">rescue</span>
+249:       <span class="ruby-value">80</span>
+250:     <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

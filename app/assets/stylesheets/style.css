@@ -1,0 +1,68 @@
+body {
+	background-color: #EEEEEE;
+	text-align : left;
+	min-width : 700px;
+	font-size: 11px;
+	color: #0F0F0F;
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+
+img {
+	border:0px;
+}
+
+a:link {
+	color: #73a3a8;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #73a3a8;
+}
+a:hover {
+	text-decoration: none;
+        color: #aa9769;
+}
+a:active {
+	text-decoration: none;
+	color: #73a3a8;
+}
+
+#outerWrapper {
+	width: 700px;
+	margin-left : auto ;
+	margin-right : auto ;
+	position : relative ;
+	text-align: center;
+}
+
+#outermostWrapper {
+	text-align: center;
+}
+
+#top {
+	width : 700px ; 
+	height:23px;
+	background: transparent url(top.png);
+	margin-bottom:0px;
+	z-index: 1;
+}
+
+#bottom {
+	width : 700px ; 
+	background: transparent url(bottom.png);
+	height:20px;
+       margin-top:0px;
+}
+
+#wrapper {
+	background: transparent url(wrapper1.png) repeat scroll top left;
+	width : 700px ;
+	text-align : center ;
+	margin-left : auto ;
+	margin-right : auto ;
+	position : relative ;
+	font-size: 11.5px;
+} 
