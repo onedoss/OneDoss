@@ -22362,3 +22362,295 @@ ActiveRecord::ConnectionNotEstablished (ActiveRecord::ConnectionNotEstablished):
 Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
 Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
 Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-29 17:40:39 -0500
+
+Mysql2::Error (Unknown MySQL server host 'mysql2://533e6492a14a53:6a8c84fc@us-mm-auto-dca-01.cleardb.com/heroku_4f519871396d157' (25)):
+  
+
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.2ms)
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (35.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-29 17:42:56 -0500
+
+Mysql2::Error (Unknown MySQL server host 'mysql2://533e6492a14a53:6a8c84fc@us-mm-auto-dca-01.cleardb.com/heroku_4f519871396d157' (0)):
+  
+
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-29 17:42:57 -0500
+
+Mysql2::Error (Unknown MySQL server host 'mysql2://533e6492a14a53:6a8c84fc@us-mm-auto-dca-01.cleardb.com/heroku_4f519871396d157' (0)):
+  
+
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-29 17:43:22 -0500
+
+Mysql2::Error (Unknown MySQL server host 'mysql://533e6492a14a53:6a8c84fc@us-mm-auto-dca-01.cleardb.com/heroku_4f519871396d157' (25)):
+  
+
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.6ms)
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-29 17:45:01 -0500
+
+Mysql2::Error (Unknown MySQL server host 'mysql://533e6492a14a53:6a8c84fc@us-mm-auto-dca-01.cleardb.com/heroku_4f519871396d157' (0)):
+  
+
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-29 17:45:02 -0500
+
+Mysql2::Error (Unknown MySQL server host 'mysql://533e6492a14a53:6a8c84fc@us-mm-auto-dca-01.cleardb.com/heroku_4f519871396d157' (0)):
+  
+
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-29 17:45:02 -0500
+
+Mysql2::Error (Unknown MySQL server host 'mysql://533e6492a14a53:6a8c84fc@us-mm-auto-dca-01.cleardb.com/heroku_4f519871396d157' (0)):
+  
+
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-29 17:45:02 -0500
+
+Mysql2::Error (Unknown MySQL server host 'mysql://533e6492a14a53:6a8c84fc@us-mm-auto-dca-01.cleardb.com/heroku_4f519871396d157' (0)):
+  
+
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-29 17:45:03 -0500
+
+Mysql2::Error (Unknown MySQL server host 'mysql://533e6492a14a53:6a8c84fc@us-mm-auto-dca-01.cleardb.com/heroku_4f519871396d157' (0)):
+  
+
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-29 17:45:40 -0500
+
+Mysql2::Error (Unknown MySQL server host 'mysql://533e6492a14a53:6a8c84fc@us-mm-auto-dca-01.cleardb.com/heroku_4f519871396d157' (25)):
+  
+
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.8ms)
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-29 17:47:00 -0500
+
+Mysql2::Error (Unknown MySQL server host 'mysql://533e6492a14a53:6a8c84fc@us-mm-auto-dca-01.cleardb.com/heroku_4f519871396d157' (0)):
+  
+
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-29 17:47:01 -0500
+
+Mysql2::Error (Unknown MySQL server host 'mysql://533e6492a14a53:6a8c84fc@us-mm-auto-dca-01.cleardb.com/heroku_4f519871396d157' (0)):
+  
+
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-29 17:47:13 -0500
+
+Mysql2::Error (Unknown MySQL server host 'us-mm-auto-dca-01.cleardb.com/heroku_4f519871396d157' (25)):
+  
+
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.3ms)
+Rendered /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-29 17:50:01 -0500
+  Processing by HomeController#index_temp as HTML
+Rendered home/index_temp.html.erb within layouts/application (16.7ms)
+Cache for Asset (application.js) is stale
+/home/onedoss/webapps/onedoss/gems/gems/jquery-rails-1.0.19/vendor/assets/javascripts/jquery.js isn't in paths: /Users/developer/Documents/Aptana Studio 3 Workspace/onedoss/app/assets/images, /Users/developer/Documents/Aptana Studio 3 Workspace/onedoss/app/assets/javascripts, /Users/developer/Documents/Aptana Studio 3 Workspace/onedoss/app/assets/stylesheets, /Users/developer/Documents/Aptana Studio 3 Workspace/onedoss/vendor/assets/stylesheets, /Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/jquery-rails-1.0.19/vendor/assets/javascripts
+Compiled application.js  (8ms)  (pid 6408)
+Compiled jquery.js  (4ms)  (pid 6408)
+Compiled jquery_ujs.js  (1ms)  (pid 6408)
+Completed 200 OK in 220ms (Views: 219.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-29 17:50:02 -0500
+Served asset /application.css - 200 OK (14ms)
+
+
+Started GET "/assets/resume_items.css?body=1" for 127.0.0.1 at 2012-01-29 17:50:02 -0500
+Served asset /resume_items.css - 200 OK (3ms)
+
+
+Started GET "/assets/resumes.css?body=1" for 127.0.0.1 at 2012-01-29 17:50:02 -0500
+Served asset /resumes.css - 200 OK (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-29 17:50:02 -0500
+Served asset /scaffolds.css - 200 OK (3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-01-29 17:50:02 -0500
+Served asset /home.css - 200 OK (3ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-01-29 17:50:02 -0500
+Served asset /sessions.css - 200 OK (2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-01-29 17:50:02 -0500
+Served asset /style.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-01-29 17:50:02 -0500
+Served asset /users.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-29 17:50:02 -0500
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-29 17:50:02 -0500
+Served asset /jquery_ujs.js - 200 OK (6ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-29 17:50:02 -0500
+Served asset /home.js - 200 OK (3ms)
+
+
+Started GET "/assets/resume_items.js?body=1" for 127.0.0.1 at 2012-01-29 17:50:03 -0500
+Served asset /resume_items.js - 200 OK (16ms)
+
+
+Started GET "/assets/resumes.js?body=1" for 127.0.0.1 at 2012-01-29 17:50:03 -0500
+Served asset /resumes.js - 200 OK (3ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-01-29 17:50:03 -0500
+Served asset /sessions.js - 200 OK (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-29 17:50:03 -0500
+Served asset /application.js - 200 OK (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-01-29 17:50:03 -0500
+Served asset /users.js - 200 OK (2ms)
+
+
+Started GET "/assets/gradient.png" for 127.0.0.1 at 2012-01-29 17:50:03 -0500
+Served asset /gradient.png - 200 OK (5ms)
+
+
+Started GET "/assets/line.png" for 127.0.0.1 at 2012-01-29 17:50:03 -0500
+Served asset /line.png - 200 OK (6ms)
+
+
+Started GET "/test_site" for 127.0.0.1 at 2012-01-29 17:50:12 -0500
+  Processing by HomeController#index as HTML
+Rendered users/_form.html.erb (36.9ms)
+Rendered sessions/_login.html.erb (1.8ms)
+Rendered home/index.html.erb within layouts/application (55.9ms)
+Completed 200 OK in 232ms (Views: 49.3ms | ActiveRecord: 54.7ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-01-29 17:50:12 -0500
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/resume_items.js?body=1" for 127.0.0.1 at 2012-01-29 17:50:12 -0500
+Served asset /resume_items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/resumes.js?body=1" for 127.0.0.1 at 2012-01-29 17:50:12 -0500
+Served asset /resumes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-29 17:50:12 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-29 17:50:12 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-29 17:50:12 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-01-29 17:50:12 -0500
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-29 17:50:12 -0500
+Served asset /application.js - 304 Not Modified (38ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-01-29 17:50:14 -0500
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (10.9ms)[0m  [1mSELECT `users`.* FROM `users` [0m
+Rendered users/index.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 81ms (Views: 35.4ms | ActiveRecord: 43.7ms)
+
+
+Started GET "/assets/resumes.js?body=1" for 127.0.0.1 at 2012-01-29 17:50:14 -0500
+Served asset /resumes.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-29 17:50:14 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/resume_items.js?body=1" for 127.0.0.1 at 2012-01-29 17:50:14 -0500
+Served asset /resume_items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-01-29 17:50:14 -0500
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-29 17:50:14 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-29 17:50:14 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-01-29 17:50:14 -0500
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-29 17:50:14 -0500
+Served asset /application.js - 304 Not Modified (1ms)

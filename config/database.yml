@@ -4,11 +4,17 @@
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
 development:
-  adapter: sqlite3
-  database: db/development.sqlite3
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  host: us-mm-auto-dca-01.cleardb.com
+  port: 3306
+  database: heroku_4f519871396d157
   pool: 5
-  timeout: 5000
-  password:  d4d53bb8
+  username: 533e6492a14a53
+  password: 6a8c84fc
+  socket: /tmp/mysql.sock
+  
 
 
 # Warning: The database defined as "test" will be erased and
