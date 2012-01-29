@@ -34,7 +34,7 @@ class ResumesController < ApplicationController
     @user = User.find(params[:user_id])
     @resume = Resume.find(params[:resume_id])
     @resume.destroy
-    redirect_to user_resume_path(@user)
+    redirect_to user_path(@user)
   end
 
 
