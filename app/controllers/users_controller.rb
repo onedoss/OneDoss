@@ -87,7 +87,7 @@ class UsersController < ApplicationController
 
       if @user.save
 
-        format.html { redirect_to @user, :notice => 'User was successfully created.' }
+        format.html { redirect_to @user, :notice => 'Account was successfully created.' }
 
         format.json { render :json => @user, :status => :created, :location => @user }
 
@@ -118,7 +118,7 @@ class UsersController < ApplicationController
 
       if @user.update_attributes(params[:user])
 
-        format.html { redirect_to @user, :notice => 'User was successfully updated.' }
+        format.html { redirect_to @user, :notice => 'Account was successfully updated.' }
 
         format.json { head :ok }
 
