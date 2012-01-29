@@ -10,9 +10,9 @@ gem 'rails', '3.1.1'
 
 gem 'mysql2'
 
-gem 'execjs'
+#gem 'execjs'
 
-#gem 'therubyracer'
+gem 'therubyracer'
 
 
 # Gems used only for assets and not required
