@@ -22654,3 +22654,381 @@ Served asset /users.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-29 17:50:14 -0500
 Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-29 22:20:30 -0500
+  Processing by HomeController#index_temp as HTML
+Rendered home/index_temp.html.erb within layouts/application (163.0ms)
+Compiled home.css  (69ms)  (pid 27204)
+Compiled resume_items.css  (17ms)  (pid 27204)
+Compiled resumes.css  (16ms)  (pid 27204)
+Compiled scaffolds.css  (57ms)  (pid 27204)
+Compiled sessions.css  (38ms)  (pid 27204)
+Compiled style.css  (0ms)  (pid 27204)
+Compiled users.css  (11ms)  (pid 27204)
+Compiled application.css  (10ms)  (pid 27204)
+Cache for Asset (application.js) is stale
+/Users/developer/.rvm/gems/ruby-1.9.2-p290/gems/jquery-rails-1.0.19/vendor/assets/javascripts/jquery.js isn't in paths: C:/Users/Sarah/OneDoss/app/assets/images, C:/Users/Sarah/OneDoss/app/assets/javascripts, C:/Users/Sarah/OneDoss/app/assets/stylesheets, C:/Users/Sarah/OneDoss/vendor/assets/stylesheets, C:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/jquery-rails-1.0.19/vendor/assets/javascripts
+Compiled application.js  (35ms)  (pid 27204)
+Compiled jquery.js  (116ms)  (pid 27204)
+Compiled jquery_ujs.js  (113ms)  (pid 27204)
+Compiled home.js  (2955ms)  (pid 27204)
+Compiled resume_items.js  (642ms)  (pid 27204)
+Compiled resumes.js  (671ms)  (pid 27204)
+Compiled sessions.js  (752ms)  (pid 27204)
+Compiled users.js  (520ms)  (pid 27204)
+Completed 200 OK in 8542ms (Views: 8541.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-29 22:20:58 -0500
+  Processing by HomeController#index_temp as HTML
+Rendered home/index_temp.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 33ms (Views: 32.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-29 22:20:58 -0500
+Served asset /application.css - 200 OK (3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-01-29 22:20:58 -0500
+Served asset /home.css - 200 OK (8ms)
+
+
+Started GET "/assets/resume_items.css?body=1" for 127.0.0.1 at 2012-01-29 22:20:58 -0500
+Served asset /resume_items.css - 200 OK (55ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-29 22:21:00 -0500
+Served asset /scaffolds.css - 200 OK (8ms)
+
+
+Started GET "/assets/resumes.css?body=1" for 127.0.0.1 at 2012-01-29 22:21:00 -0500
+Served asset /resumes.css - 200 OK (10ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-01-29 22:21:00 -0500
+Served asset /sessions.css - 200 OK (7ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-01-29 22:21:00 -0500
+Served asset /style.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-01-29 22:21:00 -0500
+Served asset /users.css - 200 OK (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-29 22:21:00 -0500
+Served asset /jquery.js - 200 OK (11ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-29 22:21:00 -0500
+Served asset /jquery_ujs.js - 200 OK (9ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-29 22:21:00 -0500
+Served asset /home.js - 200 OK (7ms)
+
+
+Started GET "/assets/resume_items.js?body=1" for 127.0.0.1 at 2012-01-29 22:21:00 -0500
+Served asset /resume_items.js - 200 OK (7ms)
+
+
+Started GET "/assets/resumes.js?body=1" for 127.0.0.1 at 2012-01-29 22:21:00 -0500
+Served asset /resumes.js - 200 OK (6ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-01-29 22:21:00 -0500
+Served asset /sessions.js - 200 OK (6ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-01-29 22:21:00 -0500
+Served asset /users.js - 200 OK (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-29 22:21:02 -0500
+Served asset /application.js - 200 OK (1ms)
+
+
+Started GET "/assets/line.png" for 127.0.0.1 at 2012-01-29 22:21:02 -0500
+Served asset /line.png - 200 OK (4ms)
+
+
+Started GET "/assets/gradient.png" for 127.0.0.1 at 2012-01-29 22:21:02 -0500
+Served asset /gradient.png - 200 OK (5ms)
+
+
+Started GET "/test_site" for 127.0.0.1 at 2012-01-29 22:21:44 -0500
+  Processing by HomeController#index as HTML
+Rendered users/_form.html.erb (52.0ms)
+Rendered sessions/_login.html.erb (2.0ms)
+Rendered home/index.html.erb within layouts/application (225.5ms)
+Completed 200 OK in 1355ms (Views: 217.0ms | ActiveRecord: 101.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-29 22:21:45 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-29 22:21:45 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-29 22:21:46 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/resume_items.js?body=1" for 127.0.0.1 at 2012-01-29 22:21:46 -0500
+Served asset /resume_items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/resumes.js?body=1" for 127.0.0.1 at 2012-01-29 22:21:46 -0500
+Served asset /resumes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-01-29 22:21:47 -0500
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-01-29 22:21:47 -0500
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-29 22:21:47 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-01-29 22:22:00 -0500
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DG/jTwmjv1Bq15eTW464yZkmmHFJjXBH7IsGrMMGcSQ=", "username"=>"sarah", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (69.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`username` = 'sarah' LIMIT 1[0m
+Redirected to http://localhost:3000/users/11
+Completed 302 Found in 927ms
+
+
+Started GET "/users/11" for 127.0.0.1 at 2012-01-29 22:22:02 -0500
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mUser Load (18.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1
+  [1m[36mResume Load (16.0ms)[0m  [1mSELECT `resumes`.* FROM `resumes` WHERE `resumes`.`user_id` = 11[0m
+Rendered users/show.html.erb within layouts/application (1260.2ms)
+  [1m[35mUser Load (12.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1
+Completed 200 OK in 3215ms (Views: 1453.7ms | ActiveRecord: 1757.2ms)
+
+
+Started GET "/assets/resumes.js?body=1" for 127.0.0.1 at 2012-01-29 22:22:05 -0500
+Served asset /resumes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-29 22:22:05 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-29 22:22:05 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-29 22:22:05 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-01-29 22:22:06 -0500
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/resume_items.js?body=1" for 127.0.0.1 at 2012-01-29 22:22:06 -0500
+Served asset /resume_items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-01-29 22:22:06 -0500
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-29 22:22:06 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started DELETE "/users/11/resumes/11" for 127.0.0.1 at 2012-01-29 22:22:11 -0500
+  Processing by ResumesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DG/jTwmjv1Bq15eTW464yZkmmHFJjXBH7IsGrMMGcSQ=", "user_id"=>"11", "id"=>"11"}
+  [1m[36mUser Load (18.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+Completed 404 Not Found in 274ms
+
+ActiveRecord::RecordNotFound (Couldn't find Resume without an ID):
+  app/controllers/resumes_controller.rb:35:in `destroy'
+
+Rendered C:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered C:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.0ms)
+Rendered C:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (161.0ms)
+
+
+Started DELETE "/users/11/resumes/11" for 127.0.0.1 at 2012-01-30 01:06:35 -0500
+  Processing by ResumesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DG/jTwmjv1Bq15eTW464yZkmmHFJjXBH7IsGrMMGcSQ=", "user_id"=>"11", "id"=>"11"}
+  [1m[35mUser Load (12.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1
+  [1m[36mResume Load (22.5ms)[0m  [1mSELECT `resumes`.* FROM `resumes` WHERE `resumes`.`id` = 11 LIMIT 1[0m
+  [1m[35m (19.5ms)[0m  BEGIN
+  [1m[36mSQL (13.5ms)[0m  [1mDELETE FROM `resumes` WHERE `resumes`.`id` = 11[0m
+  [1m[35m (260.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/11
+Completed 302 Found in 512ms
+
+
+Started GET "/users/11" for 127.0.0.1 at 2012-01-30 01:06:37 -0500
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (15.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[35mResume Load (26.5ms)[0m  SELECT `resumes`.* FROM `resumes` WHERE `resumes`.`user_id` = 11
+Rendered users/show.html.erb within layouts/application (169.0ms)
+  [1m[36mUser Load (24.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+Completed 200 OK in 329ms (Views: 139.5ms | ActiveRecord: 185.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-30 01:06:38 -0500
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-30 01:06:38 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/resumes.css?body=1" for 127.0.0.1 at 2012-01-30 01:06:38 -0500
+Served asset /resumes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/resume_items.css?body=1" for 127.0.0.1 at 2012-01-30 01:06:38 -0500
+Served asset /resume_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-01-30 01:06:38 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-01-30 01:06:38 -0500
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-01-30 01:06:38 -0500
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-01-30 01:06:38 -0500
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-30 01:06:38 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-30 01:06:38 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-30 01:06:38 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/resume_items.js?body=1" for 127.0.0.1 at 2012-01-30 01:06:38 -0500
+Served asset /resume_items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/resumes.js?body=1" for 127.0.0.1 at 2012-01-30 01:06:38 -0500
+Served asset /resumes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-01-30 01:06:38 -0500
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-01-30 01:06:38 -0500
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-30 01:06:38 -0500
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started DELETE "/users/11/resumes/31" for 127.0.0.1 at 2012-01-30 01:07:02 -0500
+  Processing by ResumesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DG/jTwmjv1Bq15eTW464yZkmmHFJjXBH7IsGrMMGcSQ=", "user_id"=>"11", "id"=>"31"}
+  [1m[35mUser Load (20.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1
+  [1m[36mResume Load (23.0ms)[0m  [1mSELECT `resumes`.* FROM `resumes` WHERE `resumes`.`id` = 31 LIMIT 1[0m
+  [1m[35m (10.5ms)[0m  BEGIN
+  [1m[36mSQL (18.0ms)[0m  [1mDELETE FROM `resumes` WHERE `resumes`.`id` = 31[0m
+  [1m[35m (60.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/11
+Completed 302 Found in 296ms
+
+
+Started GET "/users/11" for 127.0.0.1 at 2012-01-30 01:07:02 -0500
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (20.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[35mResume Load (45.5ms)[0m  SELECT `resumes`.* FROM `resumes` WHERE `resumes`.`user_id` = 11
+Rendered users/show.html.erb within layouts/application (174.5ms)
+  [1m[36mUser Load (28.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+Completed 200 OK in 333ms (Views: 83.0ms | ActiveRecord: 246.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-30 01:07:03 -0500
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-01-30 01:07:03 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/resume_items.css?body=1" for 127.0.0.1 at 2012-01-30 01:07:03 -0500
+Served asset /resume_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/resumes.css?body=1" for 127.0.0.1 at 2012-01-30 01:07:03 -0500
+Served asset /resumes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-01-30 01:07:03 -0500
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-30 01:07:03 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-01-30 01:07:03 -0500
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-01-30 01:07:03 -0500
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-30 01:07:03 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-30 01:07:03 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-30 01:07:03 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/resume_items.js?body=1" for 127.0.0.1 at 2012-01-30 01:07:03 -0500
+Served asset /resume_items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/resumes.js?body=1" for 127.0.0.1 at 2012-01-30 01:07:03 -0500
+Served asset /resumes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-01-30 01:07:03 -0500
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-01-30 01:07:03 -0500
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-30 01:07:03 -0500
+Served asset /application.js - 304 Not Modified (2ms)

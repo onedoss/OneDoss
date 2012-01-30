@@ -32,9 +32,9 @@ class ResumesController < ApplicationController
 
   def destroy
     @user = User.find(params[:user_id])
-    @resume = Resume.find(params[:resume_id])
+    @resume = Resume.find(params[:id])
     @resume.destroy
-    redirect_to @user
+    redirect_to user_path(@user)
   end
 
 
