@@ -28,6 +28,9 @@ group :assets do
 
 end
 
+group :production do
+  gem 'therubyracer-heroku', '0.8.1.pre3'
+end
 
 gem 'jquery-rails'
 
