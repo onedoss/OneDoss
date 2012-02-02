@@ -1,0 +1,53 @@
+<%= form_for([@user, @resume, @resume.sections.build]) do |f| %>
+
+  <% if @section.errors.any? %>
+
+    <div id="error_explanation">
+
+      <h2><%= pluralize(@section.errors.count, "error") %> prohibited this resume item from being saved:</h2>
+
+
+      <ul>
+
+      <% @section.errors.full_messages.each do |msg| %>
+
+        <li><%= msg %></li>
+
+      <% end %>
+
+      </ul>
+
+    </div>
+
+  <% end %>
+
+  <table>
+  <tr>
+  <td>
+  <div class="field">
+
+    <%= f.label :name %><br />
+
+    <%= f.text_field :name %>
+
+  </div>
+  </td>
+  <td>
+  <div class="field">
+
+    <%= f.label :order %><br />
+
+    <%= f.text_field :order %>
+
+  </div>
+  </td>
+  
+  </tr>
+  </table>
+  <div class="actions">
+
+    <%= f.submit %>
+
+  </div>
+
+<% end %>

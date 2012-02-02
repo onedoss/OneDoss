@@ -1,15 +1,15 @@
-<%= form_for([@user, @resume, @resume.resume_items.build]) do |f| %>
+<%= form_for([@user, @resume, @section, @item]) do |f| %>
 
-  <% if @resumeItem.errors.any? %>
+  <% if @item.errors.any? %>
 
     <div id="error_explanation">
 
-      <h2><%= pluralize(@resume_item.errors.count, "error") %> prohibited this resume item from being saved:</h2>
+      <h2><%= pluralize(@item.errors.count, "error") %> prohibited this resume item from being saved:</h2>
 
 
       <ul>
 
-      <% @resumeItem.errors.full_messages.each do |msg| %>
+      <% @item.errors.full_messages.each do |msg| %>
 
         <li><%= msg %></li>
 
@@ -26,28 +26,18 @@
   <td>
   <div class="field">
 
-    <%= f.label :type %><br />
-
-    <%= f.text_field :type %>
-
-  </div>
-  </td>
-  <td>
-  <div class="field">
-
-    <%= f.label :section %><br />
-
-    <%= f.text_field :section %>
-  </div>
-  </td>
-  </tr>
-  <tr>
-  <td>
-  <div class="field">
-
     <%= f.label :position_title %><br />
 
     <%= f.text_field :positiontitle %>
+
+  </div>
+  </td>
+  <td>
+  <div class="field">
+
+    <%= f.label :organization %><br />
+
+    <%= f.text_field :organization %>
 
   </div>
   </td>

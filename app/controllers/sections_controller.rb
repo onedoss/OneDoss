@@ -1,11 +1,9 @@
-class ResumeItemsController < ApplicationController
+class SectionsController < ApplicationController
 
    def create
       @user = User.find(params[:user_id])
       @resume = Resume.find(params[:resume_id])
-      @resumeItem = @resume.resume_items.create(params[:resume_item])
-      puts "************************************"
-      puts params[:resume_item]
+      @section = @resume.sections.create(params[:section])
       redirect_to user_resume_path(@user, @resume)
    end
 
@@ -13,14 +11,14 @@ class ResumeItemsController < ApplicationController
   def new
     @user = User.find(params[:user_id])
     @resume = Resume.find(params[:resume_id])
-    @resumeItem = ResumeItem.new
+    @section = Section.new
 
 
     respond_to do |format|
 
       format.html # new.html.erb
 
-      format.json { render :json => @resumeItem }
+      format.json { render :json => @section }
 
     end
 
@@ -32,14 +30,14 @@ class ResumeItemsController < ApplicationController
 
     @user = User.find(params[:user_id])
     @resume = Resume.find(params[:resume_id])
-    @resumeItem = ResumeItem.find(params[:id])
+    @section = Section.find(params[:id])
   end
 
   def destroy
     @user = User.find(params[:user_id])
     @resume = Resume.find(params[:resume_id])
-    @resumeItem = ResumeItem.find(params[:id])
-    @resumeItem.destroy
+    @section = Section.find(params[:id])
+    @section.destroy
     redirect_to user_resume_path(@user,@resume)
   end
 

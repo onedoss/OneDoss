@@ -3,5 +3,5 @@ class Resume < ActiveRecord::Base
 
    belongs_to :user
 
-   has_many :resume_items
+   has_many :sections
 end

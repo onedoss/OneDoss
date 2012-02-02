@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -10,13 +11,12 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111226220712) do
+ActiveRecord::Schema.define(:version => 20120201203655) do
 
-  create_table "resume_items", :force => true do |t|
-    t.integer  "resume_id"
-    t.string   "type"
-    t.string   "section"
+  create_table "items", :force => true do |t|
+    t.integer  "section_id"
     t.string   "positiontitle"
+    t.string   "organization"
     t.string   "location"
     t.string   "startMonth"
     t.string   "startSeason"
@@ -25,13 +25,13 @@ ActiveRecord::Schema.define(:version => 20111226220712) do
     t.string   "endSeason"
     t.integer  "endYear"
     t.text     "description"
+    t.integer  "order"
+    t.text     "link"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "order"
-    t.string   "link"
   end
 
-  add_index "resume_items", ["resume_id"], :name => "index_resume_items_on_resume_id"
+  add_index "items", ["section_id"], :name => "index_items_on_section_id"
 
   create_table "resumes", :force => true do |t|
     t.integer  "user_id"
@@ -47,6 +47,16 @@ ActiveRecord::Schema.define(:version => 20111226220712) do
   end
 
   add_index "resumes", ["user_id"], :name => "index_resumes_on_user_id"
+
+  create_table "sections", :force => true do |t|
+    t.integer  "resume_id"
+    t.string   "name"
+    t.integer  "order"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "sections", ["resume_id"], :name => "index_sections_on_resume_id"
 
   create_table "users", :force => true do |t|
     t.string   "username"

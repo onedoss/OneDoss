@@ -8,7 +8,9 @@ ResumeViewer::Application.routes.draw do
 
   resources :users do
      resources :resumes do
-        resources :resume_items
+        resources :sections do
+          resources :items
+        end
      end
   end
 
