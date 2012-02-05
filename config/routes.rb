@@ -5,7 +5,6 @@ ResumeViewer::Application.routes.draw do
   get "home/index_temp"
 
 
-
   resources :users do
      resources :resumes do
         resources :sections do
@@ -25,6 +24,8 @@ ResumeViewer::Application.routes.draw do
   get "sign_up" => "users#new", :as => "sign_up"
 
   get "test_site" => 'home#index', :as => "test_site"
+  
+  match 'uploads' => 'resumes#upload', :as => 'resume_upload'
 
 
   # The priority is based upon order of creation:
