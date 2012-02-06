@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120201203655) do
+ActiveRecord::Schema.define(:version => 20120205215449) do
 
   create_table "items", :force => true do |t|
     t.integer  "section_id"
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(:version => 20120201203655) do
     t.text     "link"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "present",       :default => false
   end
 
   add_index "items", ["section_id"], :name => "index_items_on_section_id"

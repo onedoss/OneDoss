@@ -18,8 +18,20 @@
 <% section.items.sort_by {|obj| obj.order}.each do |resumeItem| %>
   <tr valign="top">
      <td>
-       <b>Position: <%= resumeItem.positiontitle %> </b><br>
-       Organization: <%= resumeItem.organization %> <br>
+       <b><%= resumeItem.positiontitle %> </b><br>
+       
+       <% if (!(resumeItem.organization=="")) &&  (!(resumeItem.location==""))%>
+       			<%= resumeItem.organization%>, <i><%= resumeItem.location %></i><br>
+       <% elsif !(resumeItem.organization=="")%>
+       			<%= resumeItem.organization %><br>
+       <% elsif !(resumeItem.location=="")%>
+       			<%= resumeItem.location %><br>
+       <% end %>
+       
+       
+       <% hasStart = !(resumeItem.startMonth=="") || !(resumeItem.startSeason=="") || !(resumeItem.startYear==nil)%>
+       <% hasEnd = !(resumeItem.endMonth=="") || !(resumeItem.endSeason=="") || !(resumeItem.endYear==nil) || (resumeItem.present==true)%>
+
        <%=
        if resumeItem.startMonth==""
        	resumeItem.startSeason
@@ -28,7 +40,11 @@
    	   end
        %> 
        <%= resumeItem.startYear %>
-       -
+       
+       <% if hasStart && hasEnd %>
+       	-
+       <% end %>
+       
        <%=
        if resumeItem.endMonth==""
        	resumeItem.endSeason
@@ -37,9 +53,18 @@
    	   end
        %> 
        <%= resumeItem.endYear %>
+       <% if (resumeItem.present==true)%>
+       		Present
+       <% end %>
+       
+       <% if hasStart || hasEnd %>
+       	<br>
+       <% end %>
+       
+       <% if !(resumeItem.description=="")%>
+       		<%= resumeItem.description %><br>
+       <% end %>
        <br>
-       Description: <%= resumeItem.description %>
-
      </td>
      <td>
        
