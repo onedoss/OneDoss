@@ -12,6 +12,19 @@
   <%= javascript_include_tag "application" %>
 
   <%= csrf_meta_tags %>
+  <script>
+	$(function() {
+		$( ".sortable" ).sortable({
+			placeholder: "ui-state-highlight",
+			axis: 'y',
+			tolerance: 'pointer',
+			revert: true,
+			cursor: 'move'
+		});
+		$( ".sortable" ).disableSelection();
+	});
+	</script>
+
 
 </head>
 
