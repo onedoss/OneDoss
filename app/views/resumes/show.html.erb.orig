@@ -1,0 +1,107 @@
+</p>
+
+
+<p>
+
+  <b>Resume Name:</b>
+
+  <%= @resume.resumeName %>
+</p>
+
+
+
+
+<div id="resume_portal">
+<% @resume.sections.sort_by {|obj| obj.order}.each do |section| %>
+<div class="resume_section">
+<h3 class="section_name"><%= section.name %></h3>
+<div class="section_body sortable">
+<% section.items.sort_by {|obj| obj.order}.each do |resumeItem| %>
+<<<<<<< HEAD
+	<div class="section_item">
+	  <div class="resume_dates">
+=======
+  <tr valign="top">
+     <td>
+       <b><%= resumeItem.positiontitle %> </b><br>
+       
+       <% if (!(resumeItem.organization=="")) &&  (!(resumeItem.location==""))%>
+       			<%= resumeItem.organization%>, <i><%= resumeItem.location %></i><br>
+       <% elsif !(resumeItem.organization=="")%>
+       			<%= resumeItem.organization %><br>
+       <% elsif !(resumeItem.location=="")%>
+       			<%= resumeItem.location %><br>
+       <% end %>
+       
+       
+       <% hasStart = !(resumeItem.startMonth=="") || !(resumeItem.startSeason=="") || !(resumeItem.startYear==nil)%>
+       <% hasEnd = !(resumeItem.endMonth=="") || !(resumeItem.endSeason=="") || !(resumeItem.endYear==nil) || (resumeItem.present==true)%>
+
+>>>>>>> e79c9f52351a0ee9a69ebad65a1bee2bdce73d40
+       <%=
+       if resumeItem.startMonth==""
+       	resumeItem.startSeason
+       else
+       	resumeItem.startMonth
+   	   end
+       %> 
+       <%= resumeItem.startYear %>
+       
+       <% if hasStart && hasEnd %>
+       	-
+       <% end %>
+       
+       <%=
+       if resumeItem.endMonth==""
+       	resumeItem.endSeason
+       else
+       	resumeItem.endMonth
+   	   end
+       %> 
+       <%= resumeItem.endYear %>
+<<<<<<< HEAD
+       </div>
+       <span class="bold" >Position: <%= resumeItem.positiontitle %> </span><%= link_to 'Edit', edit_user_resume_section_item_path(@user, @resume, section, resumeItem) %>
+<%= link_to 'Delete', [@user, @resume, section, resumeItem], :confirm => 'Are you sure you want to delete this item?' , :method => :delete %><br>
+       Organization: <%= resumeItem.organization %> <br>
+       Description: <%= resumeItem.description %>
+
+</div>
+=======
+       <% if (resumeItem.present==true)%>
+       		Present
+       <% end %>
+       
+       <% if hasStart || hasEnd %>
+       	<br>
+       <% end %>
+       
+       <% if !(resumeItem.description=="")%>
+       		<%= resumeItem.description %><br>
+       <% end %>
+       <br>
+     </td>
+     <td>
+       
+<%= link_to 'Edit', edit_user_resume_section_item_path(@user, @resume, section, resumeItem) %>
+<br>  
+<%= link_to 'Delete', [@user, @resume, section, resumeItem], :confirm => 'Are you sure you want to delete this item?' , :method => :delete %>
+     </td>
+  </tr>
+  
+
+>>>>>>> e79c9f52351a0ee9a69ebad65a1bee2bdce73d40
+<% end %>
+</div>
+
+	<%= link_to "Add a New #{section.name} Item", new_user_resume_section_item_path(@user,@resume, section) %>
+
+
+<br>
+<% end %>
+
+</div>
+
+<%= link_to 'Add a New Resume Section', new_user_resume_section_path(@user,@resume) %>
+<br><br>
+<%= link_to 'Back to Resume List', user_path(@user) %>
