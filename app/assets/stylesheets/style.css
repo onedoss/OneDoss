@@ -9,6 +9,14 @@ body {
 	padding: 0px;
 }
 
+#header { 	height:67px;
+			width:100%;
+			background-color:#fff;
+			padding:5px;
+			border-bottom: solid 2px #85898a;
+			margin-bottom:20px;
+		}
+
 img {
 	border:0px;
 }
