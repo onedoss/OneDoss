@@ -41,6 +41,14 @@ Start a New Resume<br/>
   </div>
 <% end %>
 
+OR
+
+Upload a New Resume<br />
+<%= form_tag(resume_upload_path, :multipart => true) do %>
+  <%= file_field_tag 'resume' %>
+  <%= submit_tag %>
+<% end %>
+
 
 
 <%= link_to 'Edit My Account', edit_user_path(@user) %>
