@@ -46,6 +46,8 @@ div.right {
 	float: right;
 }
 
+.clear { clear: both; }
+
 #outerWrapper {
 	width: 700px;
 	margin-left : auto ;
