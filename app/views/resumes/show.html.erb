@@ -74,13 +74,11 @@
 <% end %>
 
 
-	<%= link_to "Add a New #{section.name} Item", new_user_resume_section_item_path(@user,@resume, section) %>
-
-
-<br>
+</div>
+<%= link_to "Add a New #{section.name} Item", new_user_resume_section_item_path(@user,@resume, section) %>
 <% end %>
 
-</div>
+
 
 <%= link_to 'Add a New Resume Section', new_user_resume_section_path(@user,@resume) %>
 <br><br>
