@@ -9,6 +9,14 @@ body {
 	padding: 0px;
 }
 
+#header { 	height:67px;
+			width:100%;
+			background-color:#fff;
+			padding:5px;
+			border-bottom: solid 2px #85898a;
+			margin-bottom:20px;
+		}
+
 img {
 	border:0px;
 }
@@ -28,6 +36,14 @@ a:hover {
 a:active {
 	text-decoration: none;
 	color: #73a3a8;
+}
+
+div.left {
+	float: left;
+}
+
+div.right {
+	float: right;
 }
 
 #outerWrapper {
@@ -66,3 +82,30 @@ a:active {
 	position : relative ;
 	font-size: 11.5px;
 } 
+
+/**** RESUME STYLES ******/
+
+#resume_portal { 	width: 800px;
+					padding:10px;
+					margin: 0 auto;
+					background-color:#fff; }
+					
+.resume_section{ 	width:100%; }
+    
+.section_name { 	width:100%;
+					border-bottom: 1px solid #000; }
+					
+.section_item { 	margin: 20px 0 0 15px;}
+
+.resume_dates { 	float:right; }
+
+.bold { 	font-weight: 600; }
+
+/***** RESUME SORTABLE STYLES *******/
+#sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+	#sortable li { margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; height: 1.5em; }
+	html>body #sortable li { height: 1.5em; line-height: 1.2em; }
+	.ui-state-highlight { height: 1.5em; line-height: 1.2em; background-color:#fff; }  
+
+
+

@@ -11,13 +11,46 @@
 
 
 
-
+<div id="resume_portal">
 <% @resume.sections.sort_by {|obj| obj.order}.each do |section| %>
-<table>	
-<tr><td><b><%= section.name %></b></td></tr>
+<div class="resume_section">
+<h3 class="section_name"><%= section.name %></h3>
+<div class="section_body sortable">
 <% section.items.sort_by {|obj| obj.order}.each do |resumeItem| %>
-  <tr valign="top">
-     <td>
+	<div class="section_item">
+		<% hasStart = !(resumeItem.startMonth=="") || !(resumeItem.startSeason=="") || !(resumeItem.startYear==nil)%>
+       <% hasEnd = !(resumeItem.endMonth=="") || !(resumeItem.endSeason=="") || !(resumeItem.endYear==nil) || (resumeItem.present==true)%>
+
+	  <div class="resume_dates">
+		   <%=
+		   if resumeItem.startMonth==""
+		   	resumeItem.startSeason
+		   else
+		   	resumeItem.startMonth
+		   end
+		   %> 
+		   <%= resumeItem.startYear %>
+		   
+		   <% if hasStart && hasEnd %>
+		   	-
+		   <% end %>
+		   
+		   <%=
+		   if resumeItem.endMonth==""
+		   	resumeItem.endSeason
+		   else
+		   	resumeItem.endMonth
+		   end
+		   %> 
+		   <%= resumeItem.endYear %>
+		   <% if (resumeItem.present==true)%>
+		   		Present
+		   <% end %>
+		   
+		   <% if hasStart || hasEnd %>
+		   	<br>
+		   <% end %>
+	  </div>
        <b><%= resumeItem.positiontitle %> </b><br>
        
        <% if (!(resumeItem.organization=="")) &&  (!(resumeItem.location==""))%>
@@ -29,61 +62,25 @@
        <% end %>
        
        
-       <% hasStart = !(resumeItem.startMonth=="") || !(resumeItem.startSeason=="") || !(resumeItem.startYear==nil)%>
-       <% hasEnd = !(resumeItem.endMonth=="") || !(resumeItem.endSeason=="") || !(resumeItem.endYear==nil) || (resumeItem.present==true)%>
-
-       <%=
-       if resumeItem.startMonth==""
-       	resumeItem.startSeason
-       else
-       	resumeItem.startMonth
-   	   end
-       %> 
-       <%= resumeItem.startYear %>
-       
-       <% if hasStart && hasEnd %>
-       	-
-       <% end %>
-       
-       <%=
-       if resumeItem.endMonth==""
-       	resumeItem.endSeason
-       else
-       	resumeItem.endMonth
-   	   end
-       %> 
-       <%= resumeItem.endYear %>
-       <% if (resumeItem.present==true)%>
-       		Present
-       <% end %>
-       
-       <% if hasStart || hasEnd %>
-       	<br>
-       <% end %>
-       
-       <% if !(resumeItem.description=="")%>
-       		<%= resumeItem.description %><br>
-       <% end %>
-       <br>
-     </td>
-     <td>
+		   
+		   <% if !(resumeItem.description=="")%>
+		   		<%= resumeItem.description %><br>
+		   <% end %>
        
 <%= link_to 'Edit', edit_user_resume_section_item_path(@user, @resume, section, resumeItem) %>
 <br>  
 <%= link_to 'Delete', [@user, @resume, section, resumeItem], :confirm => 'Are you sure you want to delete this item?' , :method => :delete %>
-     </td>
-  </tr>
-  
-
+</div>
 <% end %>
 
-<tr><td>
-	<%= link_to "Add a New #{section.name} Item", new_user_resume_section_item_path(@user,@resume, section) %>
-</td></tr>
 
-</table>
+	<%= link_to "Add a New #{section.name} Item", new_user_resume_section_item_path(@user,@resume, section) %>
+
+
 <br>
 <% end %>
+
+</div>
 
 <%= link_to 'Add a New Resume Section', new_user_resume_section_path(@user,@resume) %>
 <br><br>
