@@ -90,7 +90,8 @@ div.right {
 #resume_portal { 	width: 800px;
 					padding:10px;
 					margin: 0 auto;
-					background-color:#fff; }
+					background-color:#fff; 
+					border: 1px solid #E0E0E0}
 					
 .resume_section{ 	width:100%; }
     
