@@ -38,6 +38,14 @@ a:active {
 	color: #73a3a8;
 }
 
+div.left {
+	float: left;
+}
+
+div.right {
+	float: right;
+}
+
 #outerWrapper {
 	width: 700px;
 	margin-left : auto ;
