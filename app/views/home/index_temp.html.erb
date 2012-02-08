@@ -1,7 +1,8 @@
 
 <script type="text/javascript">
 document.getElementById("user_nav").innerHTML="";
-document.getElementById("header").innerHTML=""
+var div = document.getElementById("header");
+if (div){ div.parentNode.removeChild(div);}
 </script>
 
 <style type="text/css">
