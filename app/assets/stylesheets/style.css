@@ -57,7 +57,8 @@ div.right {
 }
 
 #outermostWrapper {
-	text-align: center;
+	padding: 20px;
+	padding-top: 0px;
 }
 
 #top {
@@ -86,12 +87,19 @@ div.right {
 } 
 
 /**** RESUME STYLES ******/
+#resume_title {
+	font-weight: bold;
+	text-transform: capitalize;
+}
 
 #resume_portal { 	width: 800px;
-					padding:10px;
+					padding: 15px;
+					padding-top: 0px;
 					margin: 0 auto;
+					margin-bottom: 5px;
 					background-color:#fff; 
-					border: 1px solid #E0E0E0}
+					border: 1px solid #E0E0E0;
+					float: left; }
 					
 .resume_section{ 	width:100%; }
     
@@ -103,6 +111,18 @@ div.right {
 .resume_dates { 	float:right; }
 
 .bold { 	font-weight: 600; }
+
+#linkFrame {
+	padding-left: 20px;
+	padding-top: 0px;
+	overflow:hidden;
+	height: 500px;
+}
+
+.linkArrow {
+	float: right;
+	padding: 5px;
+}
 
 /***** RESUME SORTABLE STYLES *******/
 #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }

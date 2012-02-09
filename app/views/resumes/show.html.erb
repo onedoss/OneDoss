@@ -1,11 +1,10 @@
+<div id="outermostWrapper">
+
 <%= link_to 'Back to Resume List', user_path(@user) %>
 
-<p>
-
-  <b>Resume Name:</b>
-
-  <%= @resume.resumeName %>
-</p>
+<div id="resume_title">
+<%= @resume.resumeName %>
+</div>
 
 
 
@@ -49,9 +48,21 @@
 		   <% if hasStart || hasEnd %>
 		   	<br>
 		   <% end %>
-	  </div>
+		   
+	  </div>	   
+
        <b><%= resumeItem.positiontitle %> </b><br>
-       
+	  
+	<% if !(resumeItem.link=="")%>
+	    <% divName = section.order.to_s+"_"+resumeItem.order.to_s %>
+		<div id="<%= divName %>" class="linkArrow">  <%= image_tag 'arrow.png', {:height => 45} %>  </div>
+		<script type="text/javascript">
+		document.getElementById("<%= divName %>").onmouseover = loadLink("<%= resumeItem.link %>", "<%= divName %>");
+		</script>
+	<% end %>
+	
+	  
+
        <% if (!(resumeItem.organization=="")) &&  (!(resumeItem.location==""))%>
        			<%= resumeItem.organization%>, <i><%= resumeItem.location %></i><br>
        <% elsif !(resumeItem.organization=="")%>
@@ -65,16 +76,20 @@
 		   <% if !(resumeItem.description=="")%>
 		   		<%= resumeItem.description %><br>
 		   <% end %>
-       
+  
+      
 <%= link_to 'Edit', edit_user_resume_section_item_path(@user, @resume, section, resumeItem) %>
 <br>  
 <%= link_to 'Delete', [@user, @resume, section, resumeItem], :confirm => 'Are you sure you want to delete this item?' , :method => :delete %>
+
+
 </div>
 <% end %>
 
 
-</div>
+
 <%= link_to "Add a New #{section.name} Item", new_user_resume_section_item_path(@user,@resume, section) %>
+</div>
 </div>
 <% end %>
 
@@ -82,4 +97,16 @@
 
 <%= link_to 'Add a New Resume Section', new_user_resume_section_path(@user,@resume) %>
 </div>
+
+<div id="linkFrameWrapper">
+<div id="linkFrame"></div>
+</div>
+
+<div class="clear"></div>
+
+<div id="navigation">
 <%= link_to 'Back to Resume List', user_path(@user) %>
+</div>
+
+
+</div>
