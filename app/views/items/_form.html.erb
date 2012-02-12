@@ -73,6 +73,22 @@
   <div class="clear"></div>
   
   <div class="left">
+	<div id="presentCheckbox">
+    <%= f.check_box :present %>
+    I work here now.
+    </div>
+
+  </div>
+  
+    <script type="text/javascript">
+	document.getElementById("presentCheckbox").onClick = hideEndDates;
+	alert(document.getElementById("presentCheckbox").onClick);
+	</script>
+	
+  <div class="clear"></div>
+  
+  <div id="endDates">
+  <div class="left">
 
     <%= f.label :end_month %><br />
 
@@ -92,6 +108,7 @@
 
     <%= f.text_field :endYear %>
 
+  </div>
   </div>
   
   <div class="clear"></div>
