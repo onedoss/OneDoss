@@ -18,11 +18,22 @@
 			placeholder: "ui-state-highlight",
 			axis: 'y',
 			tolerance: 'pointer',
-			revert: true,
-			cursor: 'move'
+			cursor: 'move',
+			handle: '.handle'
 		});
 		$( ".sortable" ).disableSelection();
 	});
+	$(document).ready(function() {
+	    $('.edit').editable('http://www.example.com/save.php');
+	     
+	 	$('.edit_area').editable('http://www.example.com/save.php', { 
+	         type      : 'textarea',
+	         cancel    : 'Cancel',
+	         submit    : 'OK',
+	         indicator : '<img src="img/indicator.gif">',
+	         tooltip   : 'Click to edit...'
+	     });
+     });
 	</script>
 
 

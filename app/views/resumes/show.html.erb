@@ -12,7 +12,7 @@
 <div id="resume_portal">
 <% @resume.sections.sort_by {|obj| obj.order}.each do |section| %>
 <div class="resume_section">
-<h3 class="section_name"><%= section.name %></h3>
+<h3 class="section_name edit"><%= section.name %></h3>
 <div class="section_body sortable">
 <% section.items.sort_by {|obj| obj.order}.each do |resumeItem| %>
 	<div class="section_item">
@@ -50,8 +50,9 @@
 		   <% end %>
 		   
 	  </div>	   
-
-       <b><%= resumeItem.positiontitle %> </b><br>
+       <span class="bold edit"><%= resumeItem.positiontitle %> </span>
+       <div class="handle"><%= image_tag 'moveicon.png', {:height => 10 } %></div>
+       	<br>
 	  
 	<% if !(resumeItem.link=="")%>
 	    <% divName = section.order.to_s+"_"+resumeItem.order.to_s %>
@@ -74,7 +75,7 @@
        
 		   
 		   <% if !(resumeItem.description=="")%>
-		   		<%= resumeItem.description %><br>
+		   		<span class="edit_area"><%= resumeItem.description %></span><br>
 		   <% end %>
   
       
