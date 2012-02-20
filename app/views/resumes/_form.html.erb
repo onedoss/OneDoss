@@ -1,0 +1,82 @@
+<%= form_for([@user, @resume]) do |f| %>
+
+  <div class="left">
+
+    <%= f.label :first_name %><br />
+
+    <%= f.text_field :firstName %>
+
+  </div>
+  <div class="left">
+
+    <%= f.label :middle_names %><br />
+
+    <%= f.text_field :middleNames %>
+
+  </div>
+  <div class="left">
+
+    <%= f.label :last_name %><br />
+
+    <%= f.text_field :lastName %>
+
+  </div>
+  
+  <div class="clear"></div>
+  
+  <div>
+
+    <%= f.label :email %><br />
+
+    <%= f.text_field :email %>
+    
+  </div>
+  
+  <div>
+
+    <%= f.label :personal_or_professional_website %><br />
+
+    <%= f.text_field :website %>
+    
+  </div>
+
+
+<div class="left">
+
+    <%= f.label :street_address %><br />
+
+    <%= f.text_field :street %>
+
+  </div>
+  <div class="left">
+
+    <%= f.label :city %><br />
+
+    <%= f.text_field :city %>
+
+  </div>
+  <div class="left">
+
+    <%= f.label :state %><br />
+
+    <%= f.text_field :state %>
+
+  </div>
+  <div class="left">
+
+    <%= f.label :country %><br />
+
+    <%= f.text_field :country %>
+
+  </div>
+  
+  <div class="clear"></div>
+
+
+  <div class="actions">
+
+    <%= f.submit %>
+
+  </div>
+
+<% end %>

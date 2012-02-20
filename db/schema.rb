@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120205215449) do
+ActiveRecord::Schema.define(:version => 20120215192413) do
 
   create_table "items", :force => true do |t|
     t.integer  "section_id"
@@ -45,6 +45,12 @@ ActiveRecord::Schema.define(:version => 20120205215449) do
     t.string   "resumeName"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "city"
+    t.string   "state"
+    t.string   "country"
+    t.string   "street"
+    t.string   "phone"
+    t.string   "website"
   end
 
   add_index "resumes", ["user_id"], :name => "index_resumes_on_user_id"
