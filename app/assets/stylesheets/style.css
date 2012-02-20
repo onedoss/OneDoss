@@ -131,9 +131,17 @@ div.right {
 
 /***** RESUME SORTABLE STYLES *******/
 #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
-	#sortable li { margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; height: 1.5em; }
-	html>body #sortable li { height: 1.5em; line-height: 1.2em; }
-	.ui-state-highlight { height: 1.5em; line-height: 1.2em; background-color:#fff; }  
+	
+#sortable li { margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; height: 1.5em; }
+	
+html>body #sortable li { height: 1.5em; line-height: 1.2em; }
+	
+.ui-state-highlight { height: 1.5em; line-height: 1.2em; background-color:#EEEEEE; }
+
+.handle {height:10px;
+		 width:10px; 
+		 cursor:move; 
+		 display:inline-block;}
 
 
 
