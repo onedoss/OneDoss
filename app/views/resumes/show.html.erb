@@ -19,22 +19,23 @@
 		<%= returnString=@resume.street
 		if !(@resume.city=="")
 			if !(returnString=="")
-				returnString+=(", ")
+				returnString<<(", ")
 			end
-			returnString+=@resume.city
+			returnString<<@resume.city
 		end
 		if !(@resume.state=="")
 			if !(returnString=="")
-				returnString+=(", ")
+				returnString<<(", ")
 			end
-			returnString+=@resume.state
+			returnString<<@resume.state
 		end
 		returnString
 		%>
 	</div>
-	<div id="clear"></div>
+	<div class="clear"></div>
 	<div id="resume_phone"><%= @resume.phone %></div>
 	<div id="resume_website"><%= @resume.website %></div>
+	<div class="clear"></div>
 	
 <% @resume.sections.sort_by {|obj| obj.order}.each do |section| %>
 <div class="resume_section">

@@ -10,10 +10,9 @@ body {
 }
 
 #header { 	height:67px;
-			width:100%;
 			background-color:#fff;
-			padding:5px;
-			border-bottom: solid 2px #85898a;
+			padding:10px;
+			border-bottom: solid 1px #85898a;
 			margin-bottom:20px;
 		}
 
@@ -31,7 +30,7 @@ a:visited {
 }
 a:hover {
 	text-decoration: none;
-        color: #aa9769;
+    color: #aa9769;
 }
 a:active {
 	text-decoration: none;
@@ -92,9 +91,29 @@ div.right {
 	text-transform: capitalize;
 }
 
+#resume_name{
+	font-weight:bold;
+	font-size:18px;
+	width:100%;
+	border-bottom: 1px solid #000;
+}
+
+#resume_email {
+	float:left;
+}
+#resume_address {
+	float:right;
+}
+#resume_website {
+	float:right;
+}
+#resume_phone {
+	float:left;
+}
+
 #resume_portal { 	width: 800px;
 					padding: 15px;
-					padding-top: 0px;
+					padding-top: 10px;
 					margin: 0 auto;
 					margin-bottom: 5px;
 					background-color:#fff;
