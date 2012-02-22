@@ -11,7 +11,34 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120205215449) do
+ActiveRecord::Schema.define(:version => 20120220081827) do
+
+  create_table "applications", :force => true do |t|
+    t.integer  "position_id"
+    t.integer  "resume_id"
+    t.integer  "applicationType"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "companies", :force => true do |t|
+    t.string   "name"
+    t.string   "industry"
+    t.text     "description"
+    t.integer  "employees"
+    t.integer  "recruiter_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "companies", ["recruiter_id"], :name => "index_companies_on_recruiter_id"
+
+  create_table "employments", :force => true do |t|
+    t.integer  "company_id"
+    t.integer  "recruiter_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "items", :force => true do |t|
     t.integer  "section_id"
@@ -34,6 +61,27 @@ ActiveRecord::Schema.define(:version => 20120205215449) do
 
   add_index "items", ["section_id"], :name => "index_items_on_section_id"
 
+  create_table "positions", :force => true do |t|
+    t.string   "title"
+    t.integer  "company_id"
+    t.string   "category"
+    t.text     "description"
+    t.integer  "numPositions"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "positions", ["company_id"], :name => "index_positions_on_company_id"
+
+  create_table "recruiters", :force => true do |t|
+    t.string   "username"
+    t.string   "email"
+    t.text     "passwordHash"
+    t.string   "passwordSalt"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "resumes", :force => true do |t|
     t.integer  "user_id"
     t.boolean  "default"
@@ -45,6 +93,12 @@ ActiveRecord::Schema.define(:version => 20120205215449) do
     t.string   "resumeName"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "city"
+    t.string   "state"
+    t.string   "country"
+    t.string   "street"
+    t.string   "phone"
+    t.string   "website"
   end
 
   add_index "resumes", ["user_id"], :name => "index_resumes_on_user_id"

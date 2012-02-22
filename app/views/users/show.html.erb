@@ -25,6 +25,7 @@
   <tr>
      <td><%= resume.resumeName %></td>
      <td><%= link_to 'View', user_resume_path(@user, resume) %></td>
+     <td><%= link_to 'Edit', [@user, resume], :method=> edit %></td>
      <td><%= link_to 'Delete', [@user, resume], :confirm => 'Are you sure you want to delete resume \''+resume.resumeName+'\'?', :method => :delete %></td>
   </tr>
 <% end %>

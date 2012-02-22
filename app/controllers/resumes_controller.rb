@@ -22,6 +22,33 @@ class ResumesController < ApplicationController
     end
 
    end
+   
+   
+   
+  def update
+
+    @user = User.find(params[:user_id])
+    @resume = Resume.find(params[:id])
+
+    respond_to do |format|
+
+      if @resume.update_attributes(params[:resume])
+
+        format.html { redirect_to [@user,@resume], :notice => 'Item was successfully updated.' }
+
+        format.json { head :ok }
+
+      else
+
+        format.html { render :action => "edit" }
+
+        format.json { render :json => @resume.errors, :status => :unprocessable_entity }
+
+      end
+
+    end
+
+  end
 
   def edit
 

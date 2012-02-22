@@ -1,5 +1,6 @@
 ResumeViewer::Application.routes.draw do
 
+
   get "sessions/new"
 
   get "home/index_temp"
@@ -13,6 +14,10 @@ ResumeViewer::Application.routes.draw do
      end
   end
 
+  resources :recruiters
+  resources :companies do
+    resources :positions
+  end
 
 
   resources :sessions
