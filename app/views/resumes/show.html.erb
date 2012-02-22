@@ -9,11 +9,11 @@
 
 
 
-<div id="resume_portal">
+<div id="resume_portal" class="sortable_section">
 <% @resume.sections.sort_by {|obj| obj.order}.each do |section| %>
 <div class="resume_section">
-<h3 class="section_name edit"><%= section.name %></h3>
-<div class="section_body sortable">
+<h3 class="section_name"><%= image_tag 'moveicon.png', {:height => 10, :class => 'handle_section' } %><span class="edit"><%= section.name %></span></h3>
+<div class="section_body sortable_item">
 <% section.items.sort_by {|obj| obj.order}.each do |resumeItem| %>
 	<div class="section_item">
 		<% hasStart = !(resumeItem.startMonth=="") || !(resumeItem.startSeason=="") || !(resumeItem.startYear==nil)%>
@@ -49,9 +49,10 @@
 		   	<br>
 		   <% end %>
 		   
-	  </div>	   
+	  </div>
+	  <div class="handle_item"><%= image_tag 'arrowmoveicon.png', {:height => 10, :class => 'handle_item' } %></div>
        <span class="bold edit"><%= resumeItem.positiontitle %> </span>
-       <div class="handle"><%= image_tag 'moveicon.png', {:height => 10 } %></div>
+       
        	<br>
 	  
 	<% if !(resumeItem.link=="")%>
