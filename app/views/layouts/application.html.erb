@@ -14,14 +14,25 @@
   <%= csrf_meta_tags %>
   <script>
 	$(function() {
-		$( ".sortable" ).sortable({
+		$( ".sortable_section" ).sortable({
+			placeholder: "ui-state-highlight",
+			start: function(event,ui) {$(ui.item).children(".section_body").hide()},
+			stop: function(event,ui) {$(ui.item).children(".section_body").slideDown()},
+			axis: 'y',
+			forceHelperSize: true,
+			cursor: 'move',
+			handle: '.handle_section'
+		});
+		$( ".sortable" ).disableSelection();
+		
+		$( ".sortable_item" ).sortable({
 			placeholder: "ui-state-highlight",
 			axis: 'y',
 			tolerance: 'pointer',
 			cursor: 'move',
-			handle: '.handle'
+			handle: '.handle_item'
 		});
-		$( ".sortable" ).disableSelection();
+		$( ".sortable_item" ).disableSelection();
 	});
 	$(document).ready(function() {
 	    $('.edit').editable('http://www.example.com/save.php');
