@@ -52,7 +52,7 @@ class ResumesController < ApplicationController
 
   def edit
 
-    @user = User.find(params[:id])
+    @user = User.find(params[:user_id])
     @resume = Resume.find(params[:id])
   end
 

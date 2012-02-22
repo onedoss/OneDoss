@@ -1,6 +1,8 @@
 <div id="outermostWrapper">
 
 <%= link_to 'Back to Resume List', user_path(@user) %>
+<br>
+<%= link_to 'Edit Personal Data Associated with this Resume', edit_user_resume_path(@user, @resume) %>
 
 <div id="resume_title">
 <%= @resume.resumeName %>
@@ -15,22 +17,22 @@
 	<div id="resume_email"><%= @resume.email %></div>
 	<div id="resume_address">
 		<%= returnString=""
-		if !@resume.street==""
+		if !(@resume.street=="")
 			returnString=(@resume.street)
 		end
-		if !@resume.city==""
-			if !returnString==""
+		if !(@resume.city=="")
+			if !(returnString=="")
 				returnString+=(", ")
 			end
 			returnString+=@resume.city
 		end
-		if !@resume.state==""
-			if !returnString==""
+		if !(@resume.state=="")
+			if !(returnString=="")
 				returnString+=(", ")
 			end
 			returnString+=@resume.state
 		end
-		return returnString
+		returnString
 		%>
 	</div>
 	<div id="clear"></div>
