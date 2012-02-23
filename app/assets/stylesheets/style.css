@@ -4,20 +4,38 @@ body {
 	min-width : 700px;
 	font-size: 11px;
 	color: #0F0F0F;
-	border: 0px;
 	margin: 0px;
 	padding: 0px;
+	border: 0px;
 }
 
-#header { 	height:67px;
-			background-color:#fff;
-			padding:10px;
-			border-bottom: solid 1px #85898a;
-			margin-bottom:20px;
+#userNav {
+	float: right;
+}
+
+#header {
+			background-color:#636363;
+			padding:4px;
+			padding-bottom:2px;
+			border-bottom: solid 1px #000000;
+			color: #ffffff;
+			overflow:hidden;
+			margin:0px;
 		}
 
-img {
+#headerBorder {
+	padding:0px;
+	margin:0px;
 	border:0px;
+	margin-top:-2px;
+	margin-bottom:20px;
+	line-height:0px;
+}
+
+img,p {
+	border:0px;
+	margin:0px;
+	padding:0px;
 }
 
 a:link {
@@ -60,30 +78,6 @@ div.right {
 	padding-top: 0px;
 }
 
-#top {
-	width : 700px ; 
-	height:23px;
-	background: transparent url(top.png);
-	margin-bottom:0px;
-	z-index: 1;
-}
-
-#bottom {
-	width : 700px ; 
-	background: transparent url(bottom.png);
-	height:20px;
-       margin-top:0px;
-}
-
-#wrapper {
-	background: transparent url(wrapper1.png) repeat scroll top left;
-	width : 700px ;
-	text-align : center ;
-	margin-left : auto ;
-	margin-right : auto ;
-	position : relative ;
-	font-size: 11.5px;
-} 
 
 /***** RESUME STYLES *****/
 #resume_title {
