@@ -80,4 +80,24 @@ class RecruitersController < ApplicationController
       format.json { head :ok }
     end
   end
+  
+  def approve
+    @employment=Employment.find(params[:employment_id])
+    if @employment.bothApprove()
+      flash[:notice] = "Request accepted."
+    end
+    redirect_to recruiter_path(@recruiter)
+    
+  end
+  
+  private
+  
+  def authorize
+    unless user_session.right_recruiter?(params[:id].to_i)
+      @recruiter = Recruiter.find(params[:recruiter_id])
+      flash[:notice] = "That's not your section!"
+      redirect_to @recruiter
+    end
+  end
+  
 end

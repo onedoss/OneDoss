@@ -57,7 +57,7 @@
 <%= link_to (image_tag 'simpleLogo6.png', :height => "28px"), root_url %>
 <div id="userNav">
   <% if current_user %>
-    <b><%= current_user.username %></b>
+    <b><%= current_user.username %></b><br>
     <%= link_to "Log out", log_out_path %>
   <% else %>
     <%= link_to "Sign up", sign_up_path %> or

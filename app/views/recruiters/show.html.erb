@@ -13,5 +13,39 @@
 
 
 
-<%= link_to 'Edit', edit_recruiter_path(@recruiter) %> |
-<%= link_to 'Back', recruiters_path %>
+<div id="company_portal">
+<div id="companyPortalLabel">
+Companies
+</div>
+
+  <% recruiter_companies_by_requestType = @recruiter.employments.group_by(&:requestType) %>
+  <% for requestType, employments in recruiter_companies_by_requestType %>
+  	<div class = "companyRelationshipLabel">
+  		<%=
+  		case requestType
+  			when 3
+  				label="My pending requests"
+  			when 2
+  				label="Unanswered company requests"
+  		end
+  		label
+  		%>	
+	</div>
+	<div class = "companyRelationshipSection">
+	<% if requestType==3 %>
+		<% for employment in employments%>
+			<div class="company">
+				<%= Company.find(employment.company_id).name%>
+				<%= link_to 'Accept Request', :employment_id => employment, :method => :approve %>
+			</div>
+		<% end %>
+	<% end %>
+	</div>
+  <% end%>
+
+<br>
+<%= link_to 'Create a new company', new_company_path(:recruiter_id => @recruiter.id) %> 
+</div>
+
+
+<%= link_to 'Edit My Account', edit_recruiter_path(@recruiter) %> 

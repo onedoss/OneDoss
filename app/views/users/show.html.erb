@@ -1,3 +1,5 @@
+
+<% editable = user_session.right_user?(@user.id) %>
 <p id="notice"><%= notice %></p>
 
 
@@ -23,13 +25,16 @@
 <table>
 <% @user.resumes.each do |resume| %>
   <tr>
-     <td><%= resume.resumeName %></td>
-     <td><%= link_to 'View', user_resume_path(@user, resume) %></td>
+     <td><%= link_to resume.resumeName, user_resume_path(@user, resume) %></td>
+     <% if editable %>
      <td><%= link_to 'Delete', [@user, resume], :confirm => 'Are you sure you want to delete resume \''+resume.resumeName+'\'?', :method => :delete %></td>
+	<% end %>
   </tr>
 <% end %>
 </table>
 
+
+<% if editable %>
 Start a New Resume<br/>
 <%= form_for([@user, @user.resumes.build]) do |f| %>
   <div class="field">
@@ -50,5 +55,6 @@ Upload a New Resume<br />
 <% end %>
 
 
-
 <%= link_to 'Edit My Account', edit_user_path(@user) %>
+
+<% end %>

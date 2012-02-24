@@ -26,7 +26,9 @@ ResumeViewer::Application.routes.draw do
 
   get "log_out" => "sessions#destroy", :as => "log_out"
   get "log_in" => "sessions#new", :as => "log_in"
+  get "recruiter_log_in" => "sessions#new_recruiter", :as => "recruiter_log_in"
   get "sign_up" => "users#new", :as => "sign_up"
+  get "recruiter_sign_up" => "recruiters#new", :as => "recruiter_sign_up"
 
   get "test_site" => 'home#index', :as => "test_site"
   
