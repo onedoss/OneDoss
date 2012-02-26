@@ -16,9 +16,9 @@
 	$(function() {
 		$( ".sortable_section" ).sortable({
 			placeholder: "ui-state-highlight",
-			start: function(event,ui) {$(ui.item).children(".section_body")},
-			stop: function(event,ui) {$(ui.item).children(".section_body").slideDown()},
+			stop: function(event,ui) {$(".section_body").slideDown()},
 			axis: 'y',
+			cursorAt: { top: 20 },
 			cursor: 'move',
 			handle: '.handle_section'
 		});
