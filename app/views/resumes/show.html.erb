@@ -3,15 +3,6 @@
 
 <div id="outermostWrapper">
 
-<%= link_to 'Back to Resume List', user_path(@user) %>
-<br>
-<% if editable%>  
-<%= link_to 'Edit Personal Data Associated with this Resume', edit_user_resume_path(@user, @resume) %>
-<% end %>
-
-<div id="resume_title">
-<%= @resume.resumeName %>
-</div>
 
 <div id="resume_portal" class="sortable_section">
 	<div id="resume_name">
@@ -49,6 +40,10 @@
 			 end%>
 	</div>
 	<div class="clear"></div>
+	
+	<% if editable%>  
+	<%= link_to 'Edit Personal Data Associated with this Resume', edit_user_resume_path(@user, @resume) %>
+	<% end %>
 	
 <% @resume.sections.sort_by {|obj| obj.order}.each do |section| %>
 <div class="resume_section">
