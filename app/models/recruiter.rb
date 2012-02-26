@@ -1,7 +1,10 @@
 class Recruiter < ActiveRecord::Base
   
    has_many :employments
-   has_many :companies, :through => :employments
+   has_many :companies, :through => :employments 
+    def push_with_attributes(company, join_attrs)
+      Employments.with_scope(:create => join_attrs) { self << company}
+    end
   
    attr_accessible :username, :email, :password, :password_confirmation, :company
 

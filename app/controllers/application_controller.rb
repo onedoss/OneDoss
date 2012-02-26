@@ -1,6 +1,4 @@
 class ApplicationController < ActionController::Base
-
-
   
   helper_method :current_user
   private
@@ -12,5 +10,9 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
 
 
+  helper_method :user_session
+  def user_session
+    @user_session ||= UserSession.new(session)
+  end
 
 end

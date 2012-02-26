@@ -4,21 +4,39 @@ body {
 	min-width : 700px;
 	font-size: 11px;
 	color: #0F0F0F;
-	border: 0px;
 	margin: 0px;
 	padding: 0px;
+	border: 0px;
 }
 
-#header { 	height:67px;
-			width:100%;
-			background-color:#fff;
-			padding:5px;
-			border-bottom: solid 2px #85898a;
-			margin-bottom:20px;
+#userNav {
+	float: right;
+}
+
+#header {
+			background-color:#636363;
+			padding:4px;
+			padding-bottom:2px;
+			border-bottom: solid 1px #000000;
+			color: #ffffff;
+			overflow:hidden;
+			margin:0px;
 		}
 
-img {
+#headerBorder {
+	padding:0px;
+	margin:0px;
 	border:0px;
+	margin-top:-2px;
+	margin-bottom:20px;
+	line-height:0px;
+}
+
+
+img,p {
+	border:0px;
+	margin:0px;
+	padding:0px;
 }
 
 a:link {
@@ -31,7 +49,7 @@ a:visited {
 }
 a:hover {
 	text-decoration: none;
-        color: #aa9769;
+    color: #00818F;
 }
 a:active {
 	text-decoration: none;
@@ -61,30 +79,6 @@ div.right {
 	padding-top: 0px;
 }
 
-#top {
-	width : 700px ; 
-	height:23px;
-	background: transparent url(top.png);
-	margin-bottom:0px;
-	z-index: 1;
-}
-
-#bottom {
-	width : 700px ; 
-	background: transparent url(bottom.png);
-	height:20px;
-       margin-top:0px;
-}
-
-#wrapper {
-	background: transparent url(wrapper1.png) repeat scroll top left;
-	width : 700px ;
-	text-align : center ;
-	margin-left : auto ;
-	margin-right : auto ;
-	position : relative ;
-	font-size: 11.5px;
-} 
 
 /***** RESUME STYLES *****/
 #resume_title {
@@ -92,9 +86,29 @@ div.right {
 	text-transform: capitalize;
 }
 
+#resume_name{
+	font-weight:bold;
+	font-size:18px;
+	width:100%;
+	border-bottom: 1px solid #000;
+}
+
+#resume_email {
+	float:left;
+}
+#resume_address {
+	float:right;
+}
+#resume_website {
+	float:right;
+}
+#resume_phone {
+	float:left;
+}
+
 #resume_portal { 	width: 800px;
 					padding: 15px;
-					padding-top: 0px;
+					padding-top: 10px;
 					margin: 0 auto;
 					margin-bottom: 5px;
 					background-color:#fff;
@@ -158,3 +172,39 @@ html>body #sortable li { height: 1.5em; line-height: 1.2em; }
 .edit form  { 	display:inline-block; }
 
 
+#companyPortalLabel{
+	font-weight: bold;
+}
+#company_portal{
+	padding: 10px;
+}
+
+.companyRelationshipLabel{
+	font-weight: bold;
+	border-bottom: 1px solid #000000;	
+}
+.companyRelationshipSection{
+}
+
+
+#home_box{
+	overflow:hidden;
+	background:#F5F5F5;
+	border: solid 1px #E8E8E8;
+	padding:30px;
+	-moz-box-shadow: 0 0 5px #D6D6D6;
+	-webkit-box-shadow: 0 0 5px #D6D6D6;
+	box-shadow: 0 0 5px #D6D6D6;
+	margin:30px;
+	margin-left:0px;
+	display:block;
+}
+.home_box_title{
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+#verticalLine{
+	margin-left:30px;
+	margin-right:30px;
+}

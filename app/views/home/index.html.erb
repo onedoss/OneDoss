@@ -1,19 +1,25 @@
-<center>
-<h1>OneDoss</h1>
-
-<table>
-<tr>
-<th>
-  Sign Up
-  <%= render 'users/form' %>
-</th>
-<th>
-  Log In
-  <%= render 'sessions/login' %>
-</th>
-</tr>
-</table>
-</center>
-<%= link_to 'Create a recruiter account', new_recruiter_path %>
+<div id="home_box">
+	
+<div class="left">
+<%= link_to 'Create a recruiter account', recruiter_sign_up_path %>
+<%= #link_to 'Sign in to your recruiter account', recruiter_log_in_path 
+%>
 <br>
 <%= link_to 'List of Users...For Development Purposes', users_path %>
+	
+</div>
+
+<div class="right">
+<%= render 'sessions/login' %>
+</div>
+
+<div class="right" id="verticalLine">
+<%= (image_tag 'verticalLine.png', :width => "1px", :height => "200px") %>
+</div>	
+
+<div class="right">
+<%= render 'users/form' %>
+</div>
+
+
+</div>

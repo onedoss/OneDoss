@@ -1,4 +1,5 @@
 class ResumesController < ApplicationController
+  before_filter :authorize, :only => [:edit, :update, :new, :create]
 
    def create
       @user = User.find(params[:user_id])
@@ -52,7 +53,7 @@ class ResumesController < ApplicationController
 
   def edit
 
-    @user = User.find(params[:id])
+    @user = User.find(params[:user_id])
     @resume = Resume.find(params[:id])
   end
 
@@ -70,5 +71,15 @@ class ResumesController < ApplicationController
     end
   end
 
+  private
+
+  def authorize
+    unless user_session.right_user?(params[:user_id].to_i)
+      @user = User.find(params[:user_id])
+      @resume = Resume.find(params[:id])
+      flash[:notice] = "That's not your resume!"
+      redirect_to user_resume_path(@user,@resume)
+    end
+  end
 
 end

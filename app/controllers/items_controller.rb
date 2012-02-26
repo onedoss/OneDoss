@@ -1,4 +1,5 @@
 class ItemsController < ApplicationController
+  before_filter :authorize, :only => [:edit, :update, :new, :create]
 
    def create
       @user = User.find(params[:user_id])
@@ -68,6 +69,17 @@ class ItemsController < ApplicationController
     @item = Item.find(params[:id])
     @item.destroy
     redirect_to user_resume_path(@user,@resume)
+  end
+
+private
+
+  def authorize
+    unless user_session.right_user?(params[:user_id].to_i)
+      @user = User.find(params[:user_id])
+      @resume = Resume.find(params[:resume_id])
+      flash[:notice] = "That's not your resume!"
+      redirect_to user_resume_path(@user,@resume)
+    end
   end
 
 end

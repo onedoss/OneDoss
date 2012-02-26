@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-
+  before_filter :authorize, :only => [:edit, :update]
 
   # GET /users
 
@@ -155,6 +155,16 @@ class UsersController < ApplicationController
 
     end
 
+  end
+  
+  private
+  
+  def authorize
+    unless user_session.right_user?(params[:id].to_i)
+      @user = User.find(params[:id])
+      flash[:notice] = "That's not your page!"
+      redirect_to @user
+    end
   end
 
 end

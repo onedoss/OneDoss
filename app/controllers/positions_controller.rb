@@ -1,4 +1,5 @@
 class PositionsController < ApplicationController
+  before_filter :authorize, :only => [:edit, :update, :new, :create]
   # GET /positions
   # GET /positions.json
   def index
@@ -80,4 +81,16 @@ class PositionsController < ApplicationController
       format.json { head :ok }
     end
   end
+  
+    private
+
+  def authorize
+    @company = Company.find(params[:company_id])
+    unless user_session.recruiter_works_for_company?(@company)
+      @position = Position.find(params[:id])
+      flash[:notice] = "You must work for this company to view that page."
+      redirect_to [@company, @position]
+    end
+  end
+  
 end

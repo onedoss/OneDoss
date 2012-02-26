@@ -1,4 +1,5 @@
 class CompaniesController < ApplicationController
+  before_filter :authorize, :only => [:edit, :update]
   # GET /companies
   # GET /companies.json
   def index
@@ -21,14 +22,16 @@ class CompaniesController < ApplicationController
     end
   end
 
+
   # GET /companies/new
   # GET /companies/new.json
   def new
     @company = Company.new
+    @company.recruiter_id = params[:recruiter_id]
 
     respond_to do |format|
       format.html # new.html.erb
-      format.json { render json: @company }
+      format.json { render json: @company}
     end
   end
 
@@ -44,6 +47,9 @@ class CompaniesController < ApplicationController
 
     respond_to do |format|
       if @company.save
+        #add an employments record
+        @company.newRecruiter(@company.recruiter_id,1)
+        
         format.html { redirect_to @company, notice: 'Company was successfully created.' }
         format.json { render json: @company, status: :created, location: @company }
       else
@@ -80,4 +86,15 @@ class CompaniesController < ApplicationController
       format.json { head :ok }
     end
   end
+  
+  private
+
+  def authorize
+    @company = Company.find(params[:id])
+    unless user_session.recruiter_is_company_admin?(@company)
+      flash[:notice] = "You must be this company's admin to modify that."
+      redirect_to @company
+    end
+  end
+
 end

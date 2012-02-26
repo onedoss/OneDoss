@@ -56,23 +56,25 @@
 </head>
 
 <body>
-<div id="header">
 	
-<div class="left">	
-<%= link_to image_tag('logo.png'), root_url %>
-</div>
-
-<div class="right" id="user_nav">
+<div id="headerWrapper">
+<div id="header">
+<%= link_to (image_tag 'simpleLogo6.png', :height => "28px"), root_url %>
+<div id="userNav">
   <% if current_user %>
-    <b><%= current_user.username %></b>
+    <b><%= current_user.username %></b><br>
     <%= link_to "Log out", log_out_path %>
   <% else %>
     <%= link_to "Sign up", sign_up_path %> or
     <%= link_to "Log in", log_in_path %>
   <% end %>
 </div>
-
 </div>
+<div id="headerBorder">
+<%= (image_tag 'headerBorder.png', :width => "100%", :height => "3px") %>
+</div>
+</div>
+
 
 <% flash.each do |name, msg| %>
   <%= content_tag :div, msg, :id => "flash_#{name}" %>

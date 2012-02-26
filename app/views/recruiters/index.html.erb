@@ -5,8 +5,6 @@
     <th>Company</th>
     <th>Username</th>
     <th>Email</th>
-    <th>Passwordhash</th>
-    <th>Passwordsalt</th>
     <th></th>
     <th></th>
     <th></th>
@@ -14,11 +12,8 @@
 
 <% @recruiters.each do |recruiter| %>
   <tr>
-    <td><%= recruiter.company %></td>
     <td><%= recruiter.username %></td>
     <td><%= recruiter.email %></td>
-    <td><%= recruiter.passwordHash %></td>
-    <td><%= recruiter.passwordSalt %></td>
     <td><%= link_to 'Show', recruiter %></td>
     <td><%= link_to 'Edit', edit_recruiter_path(recruiter) %></td>
     <td><%= link_to 'Destroy', recruiter, confirm: 'Are you sure?', method: :delete %></td>
