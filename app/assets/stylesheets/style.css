@@ -144,6 +144,9 @@ html>body #sortable li { height: 1.5em; line-height: 1.2em; }
 		 		cursor:move; 
 		 		display:inline-block;}
 		 		
+.resume_section {height:auto;
+					overflow:hidden;}
+		 		
 .handle_section{height:10px;
 		 		width:9px;
 		 		margin-right: 5px;
