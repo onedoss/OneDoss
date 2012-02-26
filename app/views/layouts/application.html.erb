@@ -16,10 +16,9 @@
 	$(function() {
 		$( ".sortable_section" ).sortable({
 			placeholder: "ui-state-highlight",
-			start: function(event,ui) {$(ui.item).children(".section_body").hide()},
+			start: function(event,ui) {$(ui.item).children(".section_body")},
 			stop: function(event,ui) {$(ui.item).children(".section_body").slideDown()},
 			axis: 'y',
-			forceHelperSize: true,
 			cursor: 'move',
 			handle: '.handle_section'
 		});
@@ -44,7 +43,13 @@
 	         indicator : '<img src="img/indicator.gif">',
 	         tooltip   : 'Click to edit...'
 	     });
-     });
+		$(".handle_section").mousedown(function(){
+  			$(".section_body").slideUp()
+
+		}).mouseleave(function(){
+  			$(this).closest(".resume_section").children(".section_body").slideDown()
+		});
+});
 	</script>
 
 
