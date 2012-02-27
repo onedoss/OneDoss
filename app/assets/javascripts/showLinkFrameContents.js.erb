@@ -1,18 +1,20 @@
 var show;
 
 function loadLink(link, divName){
-    function returnFunc(e) {
+    function returnFunc() {
 	  if (show==undefined || show[divName]==undefined){
 		  var linkFrame = document.getElementById("linkFrame");
 		  var linkArrowFrame = document.getElementById("linkArrowFrame");
 		  var wrapperOffset = document.getElementById("resume_portal").offsetTop;
 		  var itemOffset = document.getElementById(divName).offsetTop;
-		  var newMargin = itemOffset-wrapperOffset;
-		  var newMargin2 = newMargin-250;
-		  if (newMargin2<0){ newMargin2=0;}
-		  linkFrame.style.marginTop = newMargin2+"px";
+		  var newPadding = itemOffset-wrapperOffset;
+		  var newPadding2 = newPadding-250;
+		  if (newPadding2<0){
+		  	 newPadding2=0;
+		  	 }
+		  linkFrame.style.paddingTop = newPadding2+"px";
 		  linkFrame.innerHTML = "<iframe width='100%' height='100%' frameborder='0' scrolling='no' src='"+link+"'> </iframe>";
-		  linkArrowFrame.style.marginTop = newMargin+"px";
+		  linkArrowFrame.style.paddingTop = newPadding+"px";
 		  linkArrowFrame.innerHTML = '<%= image_tag("linkFrameArrow.png") %>';
 		  show=function(){};
 		  show[divName]=true;
@@ -25,7 +27,27 @@ function unloadLink() {
     document.getElementById("linkFrame").innerHTML = "";
 }
 
-function hideEndDates(){
-	alert("call");
-	document.getElementById("endDates").style.display="none";
+//shows (param) id's contents if checkbox (param) box is currently checked, else hides it
+
+function showHideText(boxId,id) { 
+	var elm = document.getElementById(id);
+	if (document.getElementById(boxId).checked){
+		elm.style.display = "none";
+	}
+	else{
+		elm.style.display = "inline";
+	}
 }
+
+//toggles whether (param) id's contents are currently displayed
+
+function toggle(id) {
+	var ele = document.getElementById(id);
+	if(ele.style.display == "inline") {
+    		ele.style.display = "none";
+  	}
+	else {
+		ele.style.display = "inline";
+	}
+} 
+
