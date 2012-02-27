@@ -16,6 +16,9 @@ class Recruiter < ActiveRecord::Base
    validates_presence_of :username
    validates_presence_of :email
    validates_uniqueness_of :email
+   validates_format_of :email,
+                      :with => /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}/i,
+                      :message => "must be a valid address"
    validates_uniqueness_of :username
 
    def self.authenticate(username, password)

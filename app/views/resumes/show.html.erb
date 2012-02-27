@@ -10,7 +10,6 @@
 	<%= @resume.middleNames%>
 	<%= @resume.lastName%>
 	</div>
-	<div id="resume_email"><%= @resume.email %></div>
 	<div id="resume_address">
 		<%= 
 		returnString=""
@@ -32,8 +31,6 @@
 		returnString
 		%>
 	</div>
-	<div class="clear"></div>
-	<div id="resume_phone"><%= @resume.phone %></div>
 	<div id="resume_website">
 		<%= if !(@resume.website=="")
 			 link_to @resume.website, @resume.website, :target => "_blank"

@@ -4,6 +4,10 @@ class UserSession
     @user_id ||= @session[:user_id]
   end
   
+  def login(user_id)
+    @session[:user_id] = user_id
+  end
+  
   def right_user?(user_id)
     @session[:user_id] && @session[:user_id]==user_id
   end
