@@ -1,4 +1,5 @@
 class RecruitersController < ApplicationController
+  before_filter :authorize, :only => [:edit, :update, :show, :approve]
   # GET /recruiters
   # GET /recruiters.json
   def index
@@ -98,9 +99,9 @@ class RecruitersController < ApplicationController
   
   def authorize
     unless user_session.right_recruiter?(params[:id].to_i)
-      @recruiter = Recruiter.find(params[:recruiter_id])
-      flash[:notice] = "That's not your section!"
-      redirect_to @recruiter
+      @recruiter = Recruiter.find(params[:id])
+      flash[:notice] = "That's not your page!"
+      redirect_to root_path
     end
   end
   

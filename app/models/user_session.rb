@@ -24,6 +24,10 @@ class UserSession
     @session[:user_id] && @session[:user_id]==user_id
   end
   
+  def right_recruiter?(recruiter_id)
+    @session[:recruiter_id] && @session[:recruiter_id]==recruiter_id
+  end
+  
   def recruiter_is_company_admin?(company)
     @session[:recruiter_id] && @session[:recruiter_id]==company.recruiter.id
   end
