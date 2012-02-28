@@ -44,6 +44,7 @@ class RecruitersController < ApplicationController
 
     respond_to do |format|
       if @recruiter.save
+        user_session.loginRecruiter(@recruiter.id)
         format.html { redirect_to @recruiter, notice: 'Recruiter was successfully created.' }
         format.json { render json: @recruiter, status: :created, location: @recruiter }
       else

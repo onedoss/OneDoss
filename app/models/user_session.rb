@@ -4,8 +4,20 @@ class UserSession
     @user_id ||= @session[:user_id]
   end
   
-  def login(user_id)
+  def setAsRecruiter()
+    @session[:rec] = true
+  end
+  
+  def isRecruiter()
+    return @session[:rec]
+  end
+  
+  def loginUser(user_id)
     @session[:user_id] = user_id
+  end
+  
+  def loginRecruiter(recruiter_id)
+    @session[:recruiter_id] = recruiter_id
   end
   
   def right_user?(user_id)
