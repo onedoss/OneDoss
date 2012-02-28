@@ -15,12 +15,16 @@ ResumeViewer::Application.routes.draw do
   end
 
   resources :recruiters
+  
   resources :companies do
     resources :positions
   end
 
 
   resources :sessions
+  
+  resources :employments
+  resources :applications
 
   root :to => 'home#index_temp'
 
@@ -33,6 +37,8 @@ ResumeViewer::Application.routes.draw do
   get "test_site" => 'home#index', :as => "test_site"
   
   match 'uploads' => 'resumes#upload', :as => 'resume_upload'
+
+  match "/recruiters/approve/:employment_id" => "recruiters#approve", :as =>"recruiter_approve_employment", :via => :put
 
 
   # The priority is based upon order of creation:

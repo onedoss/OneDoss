@@ -84,10 +84,13 @@ class RecruitersController < ApplicationController
   
   def approve
     @employment=Employment.find(params[:employment_id])
-    if @employment.bothApprove()
-      flash[:notice] = "Request accepted."
-    end
-    redirect_to recruiter_path(@recruiter)
+      if @employment.approvedByBoth
+        flash[:notice] = "Association approved."
+        redirect_to @employment.recruiter
+      else
+        flash[:notice] = "Association approval failed to go through."
+        redirect_to @employment.recruiter
+      end
     
   end
   

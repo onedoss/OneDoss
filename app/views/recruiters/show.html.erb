@@ -36,7 +36,22 @@ Companies
 		<% for employment in employments%>
 			<div class="company">
 				<%= Company.find(employment.company_id).name%>
-				<%= link_to 'Accept Request', :employment_id => employment, :method => :approve %>
+				<%= button_to 'Accept Request', recruiter_approve_employment_path(employment), :method => :put %>
+    			<%= button_to 'Delete', [employment], :confirm => 'Are you sure you want to delete this association?' , :controller => employments, :method => :delete %>
+			</div>
+		<% end %>
+	<% elsif requestType==2 %>
+		<% for employment in employments%>
+			<div class="company">
+				<%= Company.find(employment.company_id).name%>
+    			<%= button_to 'Delete', [employment], :confirm => 'Are you sure you want to delete this association?' , :controller => employments, :method => :delete %>
+			</div>
+		<% end %>
+	<% elsif requestType==1 %>
+		<% for employment in employments%>
+			<div class="company">
+				<%= Company.find(employment.company_id).name%>
+    			<%= button_to 'Delete', [employment], :confirm => 'Are you sure you want to delete this association?' , :controller => employments, :method => :delete %>
 			</div>
 		<% end %>
 	<% end %>

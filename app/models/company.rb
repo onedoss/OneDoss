@@ -1,4 +1,6 @@
 class Company < ActiveRecord::Base
+   validates_presence_of :name
+   validates_uniqueness_of :name
   belongs_to :recruiter
   has_many :employments
   has_many :recruiters, :through => :employments 
@@ -7,11 +9,4 @@ class Company < ActiveRecord::Base
         empl.save
     end
     
-  def recruiter_is_company_admin?(recruiter_id)
-    self.recruiter.id && self.recruiter.id==recruiter_id
-  end
-  
-  def recruiter_works_for_company?(recruiter_id)
-    self.recruiters.include?(recruiter_id)
-  end
 end
