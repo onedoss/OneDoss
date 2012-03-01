@@ -1,5 +1,5 @@
 body {
-	background-color: #EEEEEE;
+	background-color: #F5F5F5;
 	text-align : left;
 	min-width : 700px;
 	font-size: 11px;
@@ -14,13 +14,16 @@ body {
 }
 
 #header {
-			background-color:#636363;
-			padding:4px;
-			padding-bottom:2px;
-			border-bottom: solid 1px #2B2B2B;
-			color: #ffffff;
+			background-color:#EDEDED;
+			padding:10px;
+			padding-bottom:13px;
+			padding-top:13px;
+			border-top: solid 3px #D13D3D; 
+			border-bottom: solid 1px #DBDBDB;
+			color: #3B3B3B;
 			overflow:hidden;
 			margin:0px;
+			margin-bottom:20px;
 		}
 
 #headerBorder {

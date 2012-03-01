@@ -87,7 +87,7 @@ class UsersController < ApplicationController
 
       if @user.save
         
-        user_session.login(@user.id)
+        user_session.loginUser(@user.id)
 
         format.html { redirect_to @user, :notice => 'Account was successfully created.' }
 

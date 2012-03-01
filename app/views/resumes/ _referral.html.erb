@@ -1,0 +1,13 @@
+<%= form_for([@user, @resume]) do |f| %>
+
+  Make a Referral
+  
+  Send this resume to a recruiter.
+  <form action="mailto:admin@example.com" enctype="text/plain" method="post">
+	Your Name: <input type="text" name="name"><br>
+	Your Email: <input type="text" name="email"><br>
+	Comments: <textarea rows="5" cols="30" name="comments"></textarea>
+	<input type="submit" value="Send">
+  </form>
+
+<% end %>
