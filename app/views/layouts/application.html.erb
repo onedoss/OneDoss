@@ -5,6 +5,8 @@
 <head>
 
   <title>OneDoss</title>
+  
+  <%= favicon_link_tag %>
 
   <%= stylesheet_link_tag    "application" %>
   <%= stylesheet_link_tag     "style" %>
@@ -57,8 +59,8 @@
 
 <body>
 	
-<div id="headerWrapper">
 <div id="header">
+<div id="headerWidthLimit">
 <%= link_to (image_tag 'logoRed.png', :height => "22px"), root_url %>
 <div id="userNav">
   <% if current_user %>
@@ -83,7 +85,15 @@
 <% end %>
 
 
+<div id="applicationWidthLimit">
+<div id="appllicationMargin">
+	
+	
 <%= yield %>
+
+
+</div>
+</div>
 
 
 </body>

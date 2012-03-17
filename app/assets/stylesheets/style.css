@@ -25,6 +25,10 @@ body {
 			margin:0px;
 			margin-bottom:20px;
 		}
+#headerWidthLimit {
+	margin:auto;
+	max-width:1400px;
+}
 
 #headerBorder {
 	padding:0px;
@@ -35,6 +39,15 @@ body {
 	line-height:0px;
 }
 
+
+#applicationWidthLimit {
+	margin:auto;
+	max-width:1400px;
+}
+#appllicationMargin {
+	margin-left:20px;
+	margin-right:20px;
+}
 
 img,p {
 	border:0px;
@@ -78,8 +91,6 @@ div.right {
 }
 
 #outermostWrapper {
-	padding: 20px;
-	padding-top: 0px;
 }
 
 
@@ -204,8 +215,6 @@ html>body #sortable li { height: 1.5em; line-height: 1.2em; }
 	-moz-box-shadow: 0 0 5px #D6D6D6;
 	-webkit-box-shadow: 0 0 5px #D6D6D6;
 	box-shadow: 0 0 5px #D6D6D6;
-	margin:30px;
-	margin-left:0px;
 	display:block;
 }
 .home_box_title{
