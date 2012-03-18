@@ -65,10 +65,10 @@ class ResumesController < ApplicationController
   end
   
   def upload
-    uploaded_io = params[:resume]
-    File.open(Rails.root.join('public', 'uploads', uploaded_io.original_filename), 'w') do |file|
-      file.write(uploaded_io.read)
-    end
+    @file = params[:resume]
+    puts @file.read
+    redirect_to users_path
+    
   end
 
   private
