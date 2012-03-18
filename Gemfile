@@ -14,6 +14,10 @@ gem 'execjs'
 
 gem 'therubyracer', :platform => :ruby
 
+gem 'hpricot'
+
+gem 'rubyzip'
+
 # Gems used only for assets and not required
 
 # in production environments by default.

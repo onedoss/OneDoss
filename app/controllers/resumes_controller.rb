@@ -1,4 +1,6 @@
 class ResumesController < ApplicationController
+  require 'hpricot'
+  require 'zip/zip'
   before_filter :authorize, :only => [:edit, :update, :new, :create]
 
    def create
@@ -66,8 +68,17 @@ class ResumesController < ApplicationController
   
   def upload
     @file = params[:resume]
-    puts @file.read
-    redirect_to users_path
+    zip = Zip::ZipFile.open(@file.tempfile)
+    @xml = zip.read("word/document.xml")
+=begin
+    doc, @posts = Hpricot::XML(@file), []
+    (doc/:country).each do |p|
+      @posts << p
+    end
+=end
+    respond_to do |format|
+      format.html # show.html.erb
+    end
     
   end
 
