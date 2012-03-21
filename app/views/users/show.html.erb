@@ -51,6 +51,7 @@ OR
 Upload a New Resume<br />
 <%= form_tag(resume_upload_path, :multipart => true) do %>
   <%= file_field_tag 'resume' %>
+  <%= hidden_field_tag 'user_id', @user.id %>
   <%= submit_tag 'Upload Resume' %>
 <% end %>
 

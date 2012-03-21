@@ -8,4 +8,9 @@ class Resume < ActiveRecord::Base
    
   has_many :applications
   has_many :resumes, :through => :applications
+  
+    def processResumeLines(lines)
+      return lines.join("***")
+    end
+
 end
